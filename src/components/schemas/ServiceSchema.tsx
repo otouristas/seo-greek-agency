@@ -20,7 +20,7 @@ export default function ServiceSchema({ name, description, url, provider }: Serv
     provider: provider || {
       '@type': 'Organization',
       name: 'Another SEO Guru',
-      url: 'https://www.anotherseoguru.com'
+      url: 'https://www.kasiotisg.com'
     },
     areaServed: {
       '@type': 'GeoCircle',

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'Choose from our flexible SEO pricing plans designed to fit your business needs and budget. Get started with a free SEO audit today.',
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/pricing',
+    canonical: 'https://www.kasiotisg.com/pricing',
   }
 }
 

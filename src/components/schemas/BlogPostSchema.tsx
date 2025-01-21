@@ -32,7 +32,7 @@ export default function BlogPostSchema({
       name: author.name,
       url: author.url
     },
-    image: image || 'https://www.anotherseoguru.com/og-image.jpg',
+    image: image || 'https://www.kasiotisg.com/og-image.jpg',
     url: url,
     datePublished: datePublished,
     dateModified: dateModified,
@@ -41,7 +41,7 @@ export default function BlogPostSchema({
       name: 'Another SEO Guru',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.anotherseoguru.com/logo.svg'
+        url: 'https://www.kasiotisg.com/logo.svg'
       }
     },
     mainEntityOfPage: {

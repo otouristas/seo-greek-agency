@@ -5,8 +5,8 @@ export default function OrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Another SEO Guru',
-    url: 'https://www.anotherseoguru.com',
-    logo: 'https://www.anotherseoguru.com/logo.svg',
+    url: 'https://www.kasiotisg.com',
+    logo: 'https://www.kasiotisg.com/logo.svg',
     description: 'Another SEO Guru provides expert SEO services to boost your rankings, drive organic traffic, and increase conversions.',
     address: {
       '@type': 'PostalAddress',
@@ -20,7 +20,7 @@ export default function OrganizationSchema() {
       '@type': 'ContactPoint',
       telephone: '+1-234-567-8900',
       contactType: 'customer service',
-      email: 'contact@anotherseoguru.com'
+      email: 'contact@kasiotisg.com'
     },
     sameAs: [
       'https://www.facebook.com/anotherseoguru',

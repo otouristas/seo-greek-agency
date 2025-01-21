@@ -33,7 +33,7 @@ export default function BlogPostLayout({
   slug
 }: BlogPostLayoutProps) {
   const formattedDate = format(new Date(date), 'MMMM d, yyyy')
-  const url = `https://www.anotherseoguru.com/blog/${slug}`
+  const url = `https://www.kasiotisg.com/blog/${slug}`
 
   return (
     <>
@@ -44,9 +44,9 @@ export default function BlogPostLayout({
         dateModified={date}
         author={{
           name: author.name,
-          url: 'https://www.anotherseoguru.com/about'
+          url: 'https://www.kasiotisg.com/about'
         }}
-        image={`https://www.anotherseoguru.com${image}`}
+        image={`https://www.kasiotisg.com${image}`}
         url={url}
       />
       

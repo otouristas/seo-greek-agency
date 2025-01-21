@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'Uncover high-value, relevant keywords to target your ideal audience and fuel your SEO strategy. Drive qualified traffic with our expert keyword research.',
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/services/keyword-research',
+    canonical: 'https://www.kasiotisg.com/services/keyword-research',
   }
 }

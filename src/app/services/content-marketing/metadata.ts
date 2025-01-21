@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'Attract, engage, and convert your target audience with high-quality, SEO-friendly content. We create content that drives traffic and builds your brand.',
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/services/content-marketing',
+    canonical: 'https://www.kasiotisg.com/services/content-marketing',
   }
 }

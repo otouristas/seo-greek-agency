@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Explore our comprehensive SEO services, including keyword research, on-page optimization, link building, local SEO, and technical SEO.',
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/services',
+    canonical: 'https://www.kasiotisg.com/services',
   }
 }
 
