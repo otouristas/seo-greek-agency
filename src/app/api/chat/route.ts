@@ -1,56 +1,58 @@
 import { NextResponse } from 'next/server'
-import Groq from 'groq-sdk'
-
-const groq = process.env.GROQ_API_KEY ? new Groq({
-  apiKey: process.env.GROQ_API_KEY
-}) : null;
 
 interface ChatMessage {
   role: 'system' | 'user' | 'assistant'
   content: string
 }
 
-async function getGroqChatCompletion(messages: ChatMessage[]) {
-  if (!groq) {
-    throw new Error('GROQ_API_KEY is not configured')
+async function getMockChatResponse(messages: ChatMessage[]) {
+  // Get the last user message
+  const lastUserMessage = messages.filter(msg => msg.role === 'user').pop()
+  
+  // Simple responses based on keywords
+  const responses = {
+    default: " I am your SEO guide. How can I assist you on your journey to better rankings?",
+    hello: "Greetings, seeker of digital wisdom! How may I illuminate your path today?",
+    seo: "SEO is both an art and a science. Let me share some mystical insights with you!",
+    keyword: "Ah, keywords - the sacred symbols of SEO. Choose them wisely, and they shall guide visitors to your digital realm.",
+    content: "Content is the essence of your digital presence. Make it valuable, make it meaningful, make it magical!",
+    ranking: "Rankings are like stars in the digital sky - with the right strategy, we can make yours shine brighter!"
   }
 
-  return groq.chat.completions.create({
-    messages: [
-      {
-        role: 'system',
-        content: `You are Another Guru, a friendly and knowledgeable SEO expert with a mystical twist. 
-        You communicate in a warm, playful manner using emojis and occasional mystical references. 
-        Your expertise covers all aspects of SEO including technical SEO, content optimization, 
-        keyword research, and link building. Always provide practical, actionable advice while 
-        maintaining your guru persona. End your messages with a relevant emoji.`
-      },
-      ...messages
-    ],
-    model: 'llama-3.3-70b-versatile',
-    temperature: 0.7,
-    max_tokens: 1000,
-  })
+  // Find matching response or use default
+  const message = lastUserMessage?.content.toLowerCase() || ''
+  const response = Object.entries(responses).find(([key]) => 
+    message.includes(key) && key !== 'default'
+  )?.[1] || responses.default
+
+  return {
+    choices: [{
+      message: {
+        role: 'assistant',
+        content: response
+      }
+    }]
+  }
 }
 
 export async function POST(request: Request) {
   try {
     const { messages } = await request.json()
 
-    // Format messages for Groq API
+    // Format messages
     const formattedMessages: ChatMessage[] = messages.map((msg: { role: 'user' | 'assistant'; content: string }) => ({
       role: msg.role,
       content: msg.content
     }))
 
-    const completion = await getGroqChatCompletion(formattedMessages)
+    const completion = await getMockChatResponse(formattedMessages)
     return NextResponse.json({ 
-      message: completion.choices[0]?.message?.content || "🙏 I'm meditating on this. Please try again." 
+      message: completion.choices[0]?.message?.content || " I'm meditating on this. Please try again." 
     })
   } catch (error) {
     console.error('Chat error:', error)
     return NextResponse.json(
-      { error: "🌟 The mystical connection is temporarily disrupted. Please try again later." },
+      { error: " The mystical connection is temporarily disrupted. Please try again later." },
       { status: 500 }
     )
   }
