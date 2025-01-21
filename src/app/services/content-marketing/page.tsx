@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
-import { CheckCircleIcon } from '@heroicons/react/24/solid'
 
 export default function ContentMarketingPage() {
   const contentTypes = [

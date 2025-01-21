@@ -1,7 +1,5 @@
 'use client'
 
-import { useEffect } from 'react'
-
 interface FAQ {
   category: string;
   questions: {

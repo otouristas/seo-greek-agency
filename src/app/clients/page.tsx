@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Metadata } from 'next'
-import Hero from '@/components/Hero'
 
 export const metadata: Metadata = {
   title: 'Our Clients | Businesses We\'ve Helped Succeed',
