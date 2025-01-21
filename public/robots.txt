@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private pages
+Disallow: /admin/
+Disallow: /private/
+Disallow: /thank-you/
+
+# Sitemap location
+Sitemap: https://www.anotherseoguru.com/sitemap.xml

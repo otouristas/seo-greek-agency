@@ -1,0 +1,86 @@
+# SEO Greek Agency Image Inventory
+
+## Blog Images
+- /blog/ai-seo-future.jpg - AI SEO Future Blog Post Image
+- /blog/core-web-vitals.jpg - Core Web Vitals Blog Post Image
+- /blog/ecommerce-content.jpg - E-commerce Content Blog Post Image
+- /blog/link-building.jpg - Link Building Blog Post Image
+- /blog/local-seo.jpg - Local SEO Blog Post Image
+
+## Client Logos (SVG)
+- /clients/edulearn-logo.svg - EduLearn Client Logo
+- /clients/fitlife-logo.svg - FitLife Client Logo
+- /clients/healthtech-logo.svg - HealthTech Client Logo
+- /clients/petparadise-logo.svg - PetParadise Client Logo
+- /clients/travelwise-logo.svg - TravelWise Client Logo
+- /clients/urbaneats-logo.svg - UrbanEats Client Logo
+
+## Main Site Assets
+- /favicon.svg - Website Favicon
+- /file.svg - File Icon
+- /globe.svg - Globe Icon
+- /hero-illustration.svg - Hero Section Illustration
+- /hero-pattern.svg - Hero Background Pattern
+- /logo.svg - Main Site Logo
+- /next.svg - Next.js Logo
+
+## General Images
+- /images/about-preview.jpg - About Section Preview Image
+- /images/cta-background.jpg - Call-to-Action Background
+- /images/hero.jpg - Main Hero Image
+- /images/testimonials-bg.jpg - Testimonials Background
+
+## Portfolio
+- /portfolio/finpro-logo.svg - FinPro Portfolio Logo
+- /portfolio/greenliving-logo.svg - GreenLiving Portfolio Logo
+- /portfolio/techstart-logo.svg - TechStart Portfolio Logo
+
+## Service Images
+### Analytics & Reporting
+- /services/analytics-reporting/hero.jpg - Analytics Service Hero Image
+
+### Content Marketing
+- /services/content-marketing/hero.jpg - Content Marketing Hero Image
+
+### E-commerce SEO
+- /services/ecommerce-seo/hero.jpg - E-commerce SEO Hero Image
+
+### Keyword Research
+- /services/keyword-research/hero.jpg - Keyword Research Hero Image
+- /services/keyword-research/process.jpg - Keyword Research Process Image
+- /services/keyword-research/tools.jpg - Keyword Research Tools Image
+
+### Local SEO
+- /services/local-seo/hero.jpg - Local SEO Hero Image
+
+### Off-page SEO
+- /services/off-page-seo/hero.jpg - Off-page SEO Hero Image
+
+### On-page SEO
+- /services/on-page-seo/hero.jpg - On-page SEO Hero Image
+- /services/on-page-seo-example.svg - On-page SEO Example Illustration
+
+### SEO Audits
+- /services/seo-audits/hero.jpg - SEO Audits Hero Image
+- /services/technical-audit-visualization.svg - Technical Audit Visualization
+- /services/technical-seo/hero.jpg - Technical SEO Hero Image
+
+### Service Process Icons
+- /services/audit-process.svg - Audit Process Icon
+- /services/audit-report-preview.svg - Audit Report Preview
+- /services/before-optimization.svg - Before Optimization Example
+- /services/after-optimization.svg - After Optimization Example
+
+## Social Media Icons
+- /social/facebook.svg - Facebook Icon
+- /social/instagram.svg - Instagram Icon
+- /social/linkedin.svg - LinkedIn Icon
+- /social/twitter.svg - Twitter Icon
+
+## Team Member Photos
+- /team/emma-davis.jpg - Emma Davis Team Photo
+- /team/john-smith.jpg - John Smith Team Photo
+- /team/michael-chen.jpg - Michael Chen Team Photo
+- /team/sarah-johnson.jpg - Sarah Johnson Team Photo
+
+Note: All paths are relative to the /public directory

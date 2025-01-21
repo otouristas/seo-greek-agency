@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="80" viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Shape -->
+  <path d="M16,40 Q40,8 64,40 T112,40" stroke="#2563EB" stroke-width="5" fill="none"/>
+  
+  <!-- Search Icon -->
+  <circle cx="40" cy="40" r="13" stroke="#2563EB" stroke-width="3" fill="none"/>
+  <line x1="50" y1="50" x2="58" y2="58" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Arrow -->
+  <path d="M72,40 L88,24 L104,40" stroke="#2563EB" stroke-width="3" fill="none"/>
+  
+  <!-- Another Text -->
+  <text x="120" y="52" font-family="Arial" font-weight="bold" font-size="42" fill="#2563EB">Another</text>
+  
+  <!-- SEO Text -->
+  <text x="285" y="52" font-family="Arial" font-weight="bold" font-size="42" fill="#1E40AF">SEO</text>
+  
+  <!-- Guru Text -->
+  <text x="120" y="70" font-family="Arial" font-size="18" fill="#6B7280">GURU</text>
+</svg>
