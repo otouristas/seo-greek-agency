@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.anotherseoguru.com',
+  siteUrl: 'https://www.kasiotisg.com',
   generateRobotsTxt: false, // We already have a custom robots.txt
   exclude: ['/thank-you/*', '/admin/*', '/private/*'],
   generateIndexSitemap: false,
