@@ -1,20 +1,142 @@
-import Image from 'next/image'
-import { Metadata } from 'next'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'Contact Us | Get Started with SEO Services',
-  description: 'Ready to improve your search rankings? Contact Another SEO Guru today for a consultation and discover how we can help grow your online presence.',
-  openGraph: {
-    title: 'Contact Us | Get Started with SEO Services',
-    description: 'Ready to improve your search rankings? Contact Another SEO Guru today for a consultation and discover how we can help grow your online presence.',
-  },
-  twitter: {
-    title: 'Contact Us | Get Started with SEO Services',
-    description: 'Ready to improve your search rankings? Contact Another SEO Guru today for a consultation and discover how we can help grow your online presence.',
-  },
-  alternates: {
-    canonical: 'https://www.anotherseoguru.com/contact',
+import Image from 'next/image'
+import { useForm, ValidationError } from '@formspree/react'
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm('xanqwbbo')
+
+  if (state.succeeded) {
+    return (
+      <div className="bg-green-50 p-6 rounded-lg text-center">
+        <h3 className="text-green-800 font-semibold text-lg mb-2">Thank You!</h3>
+        <p className="text-green-700">
+          Your message has been sent successfully. We'll get back to you soon.
+        </p>
+      </div>
+    )
   }
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            First Name
+          </label>
+          <input
+            type="text"
+            name="firstName"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Last Name
+          </label>
+          <input
+            type="text"
+            name="lastName"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
+        </div>
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          Company Name
+        </label>
+        <input
+          type="text"
+          name="company"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          Email Address
+        </label>
+        <input
+          type="email"
+          name="email"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+        <ValidationError prefix="Email" field="email" errors={state.errors} className="mt-1 text-sm text-red-600" />
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          Phone Number
+        </label>
+        <input
+          type="tel"
+          name="phone"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          Website URL
+        </label>
+        <input
+          type="url"
+          name="website"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          How can we help?
+        </label>
+        <textarea
+          name="message"
+          rows={4}
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        ></textarea>
+        <ValidationError prefix="Message" field="message" errors={state.errors} className="mt-1 text-sm text-red-600" />
+      </div>
+
+      <div>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            name="privacy"
+            className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+            required
+          />
+          <span className="ml-2 text-sm text-gray-600">
+            I agree to the{' '}
+            <a href="/privacy-policy" className="text-blue-600 hover:underline">
+              Privacy Policy
+            </a>
+          </span>
+        </label>
+      </div>
+
+      <button
+        type="submit"
+        disabled={state.submitting}
+        className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        {state.submitting ? 'Sending...' : 'Send Message'}
+      </button>
+
+      {state.errors && Object.keys(state.errors).length > 0 && (
+        <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-md">
+          <p className="text-sm text-red-600">
+            Please correct the errors above and try again.
+          </p>
+        </div>
+      )}
+    </form>
+  )
 }
 
 export default function ContactPage() {
@@ -77,12 +199,12 @@ export default function ContactPage() {
                   <div className="flex items-start space-x-4">
                     <div className="p-3 bg-blue-100 rounded-lg">
                       <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h2v4l.586-.586z" />
                       </svg>
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold mb-1">Email Us</h3>
-                      <p className="text-gray-600">info@anotherseo.guru</p>
+                      <p className="text-gray-600">seo@kasiotisg.com</p>
                       <p className="text-sm text-gray-500 mt-1">We'll respond within 24 hours</p>
                     </div>
                   </div>
@@ -140,105 +262,7 @@ export default function ContactPage() {
 
               {/* Contact Form */}
               <div className="bg-white rounded-2xl shadow-xl p-8">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        First Name
-                      </label>
-                      <input
-                        type="text"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Last Name
-                      </label>
-                      <input
-                        type="text"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Company Name
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Website URL
-                    </label>
-                    <input
-                      type="url"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      How can we help?
-                    </label>
-                    <textarea
-                      rows={4}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <div>
-                    <label className="flex items-center">
-                      <input
-                        type="checkbox"
-                        className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                        required
-                      />
-                      <span className="ml-2 text-sm text-gray-600">
-                        I agree to the{' '}
-                        <a href="/privacy-policy" className="text-blue-600 hover:underline">
-                          Privacy Policy
-                        </a>
-                      </span>
-                    </label>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors"
-                  >
-                    Send Message
-                  </button>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>
