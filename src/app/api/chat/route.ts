@@ -1,13 +1,9 @@
 import { NextResponse } from 'next/server'
 import Groq from 'groq-sdk'
 
-if (!process.env.GROQ_API_KEY) {
-  throw new Error('GROQ_API_KEY environment variable is not set')
-}
-
-const groq = new Groq({
+const groq = process.env.GROQ_API_KEY ? new Groq({
   apiKey: process.env.GROQ_API_KEY
-})
+}) : null;
 
 interface ChatMessage {
   role: 'system' | 'user' | 'assistant'
@@ -15,6 +11,10 @@ interface ChatMessage {
 }
 
 async function getGroqChatCompletion(messages: ChatMessage[]) {
+  if (!groq) {
+    throw new Error('GROQ_API_KEY is not configured')
+  }
+
   return groq.chat.completions.create({
     messages: [
       {
@@ -50,7 +50,7 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error('Chat error:', error)
     return NextResponse.json(
-      { error: 'Failed to process chat message' },
+      { error: "🌟 The mystical connection is temporarily disrupted. Please try again later." },
       { status: 500 }
     )
   }
