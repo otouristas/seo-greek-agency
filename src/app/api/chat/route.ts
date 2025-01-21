@@ -1,11 +1,20 @@
 import { NextResponse } from 'next/server'
 import Groq from 'groq-sdk'
 
+if (!process.env.GROQ_API_KEY) {
+  throw new Error('GROQ_API_KEY environment variable is not set')
+}
+
 const groq = new Groq({
-  apiKey: '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'
+  apiKey: process.env.GROQ_API_KEY
 })
 
-async function getGroqChatCompletion(messages: any[]) {
+interface ChatMessage {
+  role: 'system' | 'user' | 'assistant'
+  content: string
+}
+
+async function getGroqChatCompletion(messages: ChatMessage[]) {
   return groq.chat.completions.create({
     messages: [
       {
@@ -29,7 +38,7 @@ export async function POST(request: Request) {
     const { messages } = await request.json()
 
     // Format messages for Groq API
-    const formattedMessages = messages.map((msg: any) => ({
+    const formattedMessages: ChatMessage[] = messages.map((msg: { role: 'user' | 'assistant'; content: string }) => ({
       role: msg.role,
       content: msg.content
     }))

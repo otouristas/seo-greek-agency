@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Metadata } from 'next'
-import Hero from '@/components/Hero'
 
 export const metadata: Metadata = {
   title: 'About Another SEO Guru | Your Partner in SEO Success',
