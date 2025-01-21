@@ -2,7 +2,7 @@ import Script from 'next/script'
 
 interface BreadcrumbItem {
   name: string
-  url: string
+  href: string
 }
 
 interface BreadcrumbSchemaProps {
@@ -17,7 +17,7 @@ export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: item.url
+      item: item.href
     }))
   }
 
