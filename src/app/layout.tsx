@@ -11,20 +11,34 @@ import ChatAgent from '@/components/chat/ChatAgent'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Another SEO Guru | Dominate Search & Grow Your Business',
-  description: 'Another SEO Guru provides expert SEO services to boost your rankings, drive organic traffic, and increase conversions. Get a free SEO audit today!',
-  keywords: 'SEO services, search engine optimization, digital marketing, SEO agency, SEO expert',
+  metadataBase: new URL('https://www.kasiotisg.com'),
+  title: {
+    template: '%s | SEO Greek Agency',
+    default: 'SEO Greek Agency | Expert SEO Services'
+  },
+  description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
   openGraph: {
-    title: 'Another SEO Guru | Dominate Search & Grow Your Business',
-    description: 'Another SEO Guru provides expert SEO services to boost your rankings, drive organic traffic, and increase conversions. Get a free SEO audit today!',
+    title: 'SEO Greek Agency | Expert SEO Services',
+    description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
     type: 'website',
     locale: 'en_US',
-    siteName: 'Another SEO Guru',
+    url: 'https://www.kasiotisg.com',
+    siteName: 'SEO Greek Agency',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'SEO Greek Agency'
+      }
+    ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Another SEO Guru | Dominate Search & Grow Your Business',
-    description: 'Another SEO Guru provides expert SEO services to boost your rankings, drive organic traffic, and increase conversions. Get a free SEO audit today!',
+    title: 'SEO Greek Agency | Expert SEO Services',
+    description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
+    site: '@kasiotisg',
+    creator: '@kasiotisg'
   },
   robots: {
     index: true,
@@ -39,7 +53,7 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code',
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com',
+    canonical: 'https://www.kasiotisg.com'
   }
 }
 

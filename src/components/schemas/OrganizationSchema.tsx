@@ -1,38 +1,38 @@
 import Script from 'next/script'
 
 export default function OrganizationSchema() {
-  const schema = {
+  const orgSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Another SEO Guru',
+    name: 'SEO Greek Agency',
     url: 'https://www.kasiotisg.com',
     logo: 'https://www.kasiotisg.com/logo.svg',
-    description: 'Another SEO Guru provides expert SEO services to boost your rankings, drive organic traffic, and increase conversions.',
+    description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
+    sameAs: [
+      'https://twitter.com/kasiotisg',
+      'https://www.linkedin.com/in/kasiotisg',
+      'https://www.facebook.com/kasiotisg',
+      'https://www.instagram.com/kasiotisg'
+    ],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Your Street Address',
-      addressLocality: 'Your City',
-      addressRegion: 'Your State',
-      postalCode: 'Your Postal Code',
-      addressCountry: 'Your Country'
+      streetAddress: '123 SEO Street',
+      addressLocality: 'Athens',
+      addressRegion: 'Attica',
+      postalCode: '12345',
+      addressCountry: 'GR'
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-234-567-8900',
-      contactType: 'customer service',
-      email: 'contact@kasiotisg.com'
-    },
-    sameAs: [
-      'https://www.facebook.com/anotherseoguru',
-      'https://www.twitter.com/anotherseoguru',
-      'https://www.linkedin.com/company/anotherseoguru',
-      'https://www.instagram.com/anotherseoguru'
-    ]
+      telephone: '+30-123-456-7890',
+      email: 'seo@kasiotisg.com'
+    }
   }
 
   return (
-    <Script id="organization-schema" type="application/ld+json">
-      {JSON.stringify(schema)}
-    </Script>
+    <Script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+    />
   )
 }

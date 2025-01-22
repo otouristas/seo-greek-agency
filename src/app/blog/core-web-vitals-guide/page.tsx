@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import BlogPostLayout from '@/components/BlogPostLayout'
 
 export const metadata: Metadata = {
-  title: 'Core Web Vitals: A Complete Guide | Another SEO Guru',
+  title: 'Core Web Vitals: A Complete Guide | SEO Greek Agency',
   description: 'Learn everything you need to know about Core Web Vitals and how they affect your website\'s SEO performance. Master LCP, FID, and CLS metrics.',
   openGraph: {
     title: 'Core Web Vitals: A Complete Guide',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     authors: ['Emma Davis'],
     images: [
       {
-        url: 'https://www.anotherseoguru.com/blog/core-web-vitals.jpg',
+        url: 'https://www.kasiotisg.com/blog/core-web-vitals.jpg',
         width: 1200,
         height: 630,
         alt: 'Core Web Vitals Guide',
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Core Web Vitals: A Complete Guide',
     description: 'Learn everything you need to know about Core Web Vitals and how they affect your website\'s SEO performance.',
-    images: ['https://www.anotherseoguru.com/blog/core-web-vitals.jpg'],
+    images: ['https://www.kasiotisg.com/blog/core-web-vitals.jpg'],
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/blog/core-web-vitals-guide',
+    canonical: 'https://www.kasiotisg.com/blog/core-web-vitals-guide',
   }
 }
 

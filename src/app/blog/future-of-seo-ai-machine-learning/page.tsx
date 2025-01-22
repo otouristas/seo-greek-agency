@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import BlogPostLayout from '@/components/BlogPostLayout'
 
 export const metadata: Metadata = {
-  title: 'The Future of SEO: AI and Machine Learning Impact | Another SEO Guru',
+  title: 'The Future of SEO: AI and Machine Learning Impact | SEO Greek Agency',
   description: 'Explore how artificial intelligence and machine learning are reshaping the SEO landscape and what it means for your business. Learn about the latest AI-driven SEO trends.',
   openGraph: {
     title: 'The Future of SEO: AI and Machine Learning Impact',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     authors: ['John Smith'],
     images: [
       {
-        url: 'https://www.anotherseoguru.com/blog/ai-seo-future.jpg',
+        url: 'https://www.kasiotisg.com/blog/ai-seo-future.jpg',
         width: 1200,
         height: 630,
         alt: 'AI and Machine Learning in SEO',
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'The Future of SEO: AI and Machine Learning Impact',
     description: 'Explore how artificial intelligence and machine learning are reshaping the SEO landscape and what it means for your business.',
-    images: ['https://www.anotherseoguru.com/blog/ai-seo-future.jpg'],
+    images: ['https://www.kasiotisg.com/blog/ai-seo-future.jpg'],
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/blog/future-of-seo-ai-machine-learning',
+    canonical: 'https://www.kasiotisg.com/blog/future-of-seo-ai-machine-learning',
   }
 }
 

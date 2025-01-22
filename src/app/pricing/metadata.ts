@@ -1,17 +1,17 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'SEO Pricing Plans | Transparent & Flexible Packages',
-  description: 'Choose from our flexible SEO pricing plans designed to fit your business needs and budget. Get started with a free SEO audit today.',
+  title: 'SEO Services Pricing | Transparent & Flexible Plans',
+  description: 'View our transparent SEO service pricing plans. Choose the package that best fits your business needs and budget. Custom solutions available.',
   openGraph: {
-    title: 'SEO Pricing Plans | Transparent & Flexible Packages',
-    description: 'Choose from our flexible SEO pricing plans designed to fit your business needs and budget. Get started with a free SEO audit today.',
+    title: 'SEO Services Pricing | Transparent & Flexible Plans',
+    description: 'View our transparent SEO service pricing plans. Choose the package that best fits your business needs and budget. Custom solutions available.',
   },
   twitter: {
-    title: 'SEO Pricing Plans | Transparent & Flexible Packages',
-    description: 'Choose from our flexible SEO pricing plans designed to fit your business needs and budget. Get started with a free SEO audit today.',
+    title: 'SEO Services Pricing | Transparent & Flexible Plans',
+    description: 'View our transparent SEO service pricing plans. Choose the package that best fits your business needs and budget. Custom solutions available.',
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/pricing',
+    canonical: 'https://www.kasiotisg.com/pricing',
   }
 }

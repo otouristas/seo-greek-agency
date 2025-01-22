@@ -1,17 +1,17 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'SEO Blog | Insights, Tips & News',
-  description: 'Stay up-to-date with the latest SEO trends, tips, and news on the Another SEO Guru blog. Learn how to improve your website\'s search engine performance.',
+  title: 'SEO Blog | Latest Insights & Strategies',
+  description: 'Stay updated with the latest SEO trends, strategies, and insights. Expert advice on technical SEO, content optimization, and search engine algorithms.',
   openGraph: {
-    title: 'SEO Blog | Insights, Tips & News',
-    description: 'Stay up-to-date with the latest SEO trends, tips, and news on the Another SEO Guru blog. Learn how to improve your website\'s search engine performance.',
+    title: 'SEO Blog | Latest Insights & Strategies',
+    description: 'Stay updated with the latest SEO trends, strategies, and insights. Expert advice on technical SEO, content optimization, and search engine algorithms.',
   },
   twitter: {
-    title: 'SEO Blog | Insights, Tips & News',
-    description: 'Stay up-to-date with the latest SEO trends, tips, and news on the Another SEO Guru blog. Learn how to improve your website\'s search engine performance.',
+    title: 'SEO Blog | Latest Insights & Strategies',
+    description: 'Stay updated with the latest SEO trends, strategies, and insights. Expert advice on technical SEO, content optimization, and search engine algorithms.',
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/blog',
+    canonical: 'https://www.kasiotisg.com/blog',
   }
 }

@@ -4,23 +4,23 @@ import PricingCard from '@/components/PricingCard'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Another SEO Guru | Dominate Search & Grow Your Business',
-  description: 'Another SEO Guru provides expert SEO services to boost your rankings, drive organic traffic, and increase conversions. Get a free SEO audit today!',
+  title: 'SEO Greek Agency | Expert SEO Services for Business Growth',
+  description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
   keywords: 'SEO services, search engine optimization, digital marketing, SEO agency, SEO expert',
   openGraph: {
-    title: 'Another SEO Guru | Dominate Search & Grow Your Business',
-    description: 'Another SEO Guru provides expert SEO services to boost your rankings, drive organic traffic, and increase conversions. Get a free SEO audit today!',
+    title: 'SEO Greek Agency | Expert SEO Services for Business Growth',
+    description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
     type: 'website',
     locale: 'en_US',
-    siteName: 'Another SEO Guru',
+    siteName: 'SEO Greek Agency',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Another SEO Guru | Dominate Search & Grow Your Business',
-    description: 'Another SEO Guru provides expert SEO services to boost your rankings, drive organic traffic, and increase conversions. Get a free SEO audit today!',
+    title: 'SEO Greek Agency | Expert SEO Services for Business Growth',
+    description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com',
+    canonical: 'https://www.kasiotisg.com',
   }
 }
 

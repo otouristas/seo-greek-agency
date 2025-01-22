@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import BlogPostLayout from '@/components/BlogPostLayout'
 
 export const metadata: Metadata = {
-  title: 'Link Building Strategies That Actually Work | Another SEO Guru',
+  title: 'Link Building Strategies That Actually Work | SEO Greek Agency',
   description: 'Discover effective link building strategies that can help improve your website\'s authority and rankings. Learn proven techniques for earning high-quality backlinks.',
   openGraph: {
     title: 'Link Building Strategies That Actually Work',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     authors: ['Sarah Johnson'],
     images: [
       {
-        url: 'https://www.anotherseoguru.com/blog/link-building.jpg',
+        url: 'https://www.kasiotisg.com/blog/link-building.jpg',
         width: 1200,
         height: 630,
         alt: 'Link Building Strategies',
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Link Building Strategies That Actually Work',
     description: 'Discover effective link building strategies that can help improve your website\'s authority and rankings.',
-    images: ['https://www.anotherseoguru.com/blog/link-building.jpg'],
+    images: ['https://www.kasiotisg.com/blog/link-building.jpg'],
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/blog/effective-link-building-strategies',
+    canonical: 'https://www.kasiotisg.com/blog/effective-link-building-strategies',
   }
 }
 

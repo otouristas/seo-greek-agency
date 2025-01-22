@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import BlogPostLayout from '@/components/BlogPostLayout'
 
 export const metadata: Metadata = {
-  title: 'Content Optimization Tips for E-commerce | Another SEO Guru',
+  title: 'Content Optimization Tips for E-commerce | SEO Greek Agency',
   description: 'Learn how to optimize your e-commerce content for better rankings and increased sales. Discover proven strategies for product descriptions, category pages, and more.',
   openGraph: {
     title: 'Content Optimization Tips for E-commerce',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     authors: ['Michael Chen'],
     images: [
       {
-        url: 'https://www.anotherseoguru.com/blog/ecommerce-content.jpg',
+        url: 'https://www.kasiotisg.com/blog/ecommerce-content.jpg',
         width: 1200,
         height: 630,
         alt: 'E-commerce Content Optimization',
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Content Optimization Tips for E-commerce',
     description: 'Learn how to optimize your e-commerce content for better rankings and increased sales.',
-    images: ['https://www.anotherseoguru.com/blog/ecommerce-content.jpg'],
+    images: ['https://www.kasiotisg.com/blog/ecommerce-content.jpg'],
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/blog/content-optimization-ecommerce',
+    canonical: 'https://www.kasiotisg.com/blog/content-optimization-ecommerce',
   }
 }
 

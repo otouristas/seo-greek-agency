@@ -2,31 +2,31 @@ import { Metadata } from 'next'
 import BlogPostLayout from '@/components/BlogPostLayout'
 
 export const metadata: Metadata = {
-  title: 'Local SEO Strategies for 2025 | Another SEO Guru',
-  description: 'Discover the latest local SEO strategies that will help your business dominate local search results in 2025. Learn about Google Business Profile optimization, local link building, and more.',
+  title: 'Local SEO Strategies for 2025: A Complete Guide',
+  description: 'Discover the most effective local SEO strategies for 2025. Learn how to optimize your business for local search and attract more customers.',
   openGraph: {
-    title: 'Local SEO Strategies for 2025',
-    description: 'Discover the latest local SEO strategies that will help your business dominate local search results.',
+    title: 'Local SEO Strategies for 2025: A Complete Guide',
+    description: 'Discover the most effective local SEO strategies for 2025. Learn how to optimize your business for local search and attract more customers.',
     type: 'article',
     publishedTime: '2025-01-05T00:00:00Z',
     authors: ['Sarah Johnson'],
     images: [
       {
-        url: 'https://www.anotherseoguru.com/blog/local-seo.jpg',
+        url: 'https://www.kasiotisg.com/blog/local-seo.jpg',
         width: 1200,
         height: 630,
-        alt: 'Local SEO Strategies',
-      },
+        alt: 'Local SEO Strategies Guide'
+      }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Local SEO Strategies for 2025',
-    description: 'Discover the latest local SEO strategies that will help your business dominate local search results.',
-    images: ['https://www.anotherseoguru.com/blog/local-seo.jpg'],
+    title: 'Local SEO Strategies for 2025: A Complete Guide',
+    description: 'Discover the most effective local SEO strategies for 2025. Learn how to optimize your business for local search and attract more customers.',
+    images: ['https://www.kasiotisg.com/blog/local-seo.jpg'],
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/blog/local-seo-strategies-2025',
+    canonical: 'https://www.kasiotisg.com/blog/local-seo-strategies-2025',
   }
 }
 
@@ -101,8 +101,8 @@ const content = `
 export default function BlogPost() {
   return (
     <BlogPostLayout
-      title="Local SEO Strategies for 2025"
-      excerpt="Discover the latest local SEO strategies that will help your business dominate local search results."
+      title="Local SEO Strategies for 2025: A Complete Guide"
+      excerpt="Discover the most effective local SEO strategies for 2025. Learn how to optimize your business for local search and attract more customers."
       content={content}
       date="2025-01-05"
       author={{
