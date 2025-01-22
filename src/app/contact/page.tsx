@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     title: 'Contact Us | SEO Greek Agency',
     description: 'Get in touch with SEO Greek Agency. Contact us for professional SEO services and digital marketing solutions.',
     type: 'website',
-    url: 'https://seogreekagency.com/contact',
+    url: 'https://kasiotisg.com/contact',
     images: [
       {
-        url: 'https://seogreekagency.com/og-image.jpg',
+        url: 'https://kasiotisg.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'SEO Greek Agency',
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Contact Us | SEO Greek Agency',
     description: 'Get in touch with SEO Greek Agency. Contact us for professional SEO services and digital marketing solutions.',
-    cardType: 'summary_large_image',
+    card: 'summary_large_image',
     images: [
       {
-        url: 'https://seogreekagency.com/og-image.jpg',
+        url: 'https://kasiotisg.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'SEO Greek Agency',
