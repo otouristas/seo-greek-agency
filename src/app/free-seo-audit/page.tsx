@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useForm, ValidationError } from '@formspree/react'
 import Hero from '@/components/Hero'
 import CTAButton from '@/components/CTAButton'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -11,6 +14,8 @@ interface AuditFeature {
 }
 
 export default function FreeSeoAuditPage() {
+  const [state, handleSubmit] = useForm("mldgrlvb")
+
   const auditFeatures: AuditFeature[] = [
     {
       title: 'Technical SEO Analysis',
@@ -101,120 +106,158 @@ export default function FreeSeoAuditPage() {
 
               {/* Audit Form */}
               <div className="bg-white rounded-2xl shadow-xl p-8">
-                <form className="space-y-6" action="/thank-you/audit">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Website URL*
-                    </label>
-                    <input
-                      type="url"
-                      placeholder="https://example.com"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      required
-                    />
+                {state.succeeded ? (
+                  <div className="text-center py-8">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h3>
+                    <p className="text-gray-600">
+                      We've received your request and will get back to you with your personalized SEO audit within 24-48 hours.
+                    </p>
                   </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        First Name*
+                        Website URL*
                       </label>
                       <input
-                        type="text"
+                        type="url"
+                        name="website"
+                        placeholder="https://example.com"
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         required
                       />
+                      <ValidationError prefix="Website" field="website" errors={state.errors} className="mt-1 text-sm text-red-600" />
                     </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          First Name*
+                        </label>
+                        <input
+                          type="text"
+                          name="firstName"
+                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          required
+                        />
+                        <ValidationError prefix="First Name" field="firstName" errors={state.errors} className="mt-1 text-sm text-red-600" />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Last Name*
+                        </label>
+                        <input
+                          type="text"
+                          name="lastName"
+                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          required
+                        />
+                        <ValidationError prefix="Last Name" field="lastName" errors={state.errors} className="mt-1 text-sm text-red-600" />
+                      </div>
+                    </div>
+
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Last Name*
+                        Business Email*
                       </label>
                       <input
-                        type="text"
+                        type="email"
+                        name="email"
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         required
                       />
+                      <ValidationError prefix="Email" field="email" errors={state.errors} className="mt-1 text-sm text-red-600" />
                     </div>
-                  </div>
 
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Business Email*
-                    </label>
-                    <input
-                      type="email"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Company Name
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Main Competitors (Optional)
-                    </label>
-                    <textarea
-                      rows={3}
-                      placeholder="List your main competitors' websites"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    ></textarea>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      What are your main SEO challenges?
-                    </label>
-                    <textarea
-                      rows={3}
-                      placeholder="Tell us about your current SEO challenges and goals"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    ></textarea>
-                  </div>
-
-                  <div>
-                    <label className="flex items-center">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Phone Number
+                      </label>
                       <input
-                        type="checkbox"
-                        className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                        required
+                        type="tel"
+                        name="phone"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
-                      <span className="ml-2 text-sm text-gray-600">
-                        I agree to receive the audit report and follow-up communications.
-                        View our{' '}
-                        <Link href="/privacy-policy" className="text-blue-600 hover:underline">
-                          Privacy Policy
-                        </Link>
-                      </span>
-                    </label>
-                  </div>
+                      <ValidationError prefix="Phone" field="phone" errors={state.errors} className="mt-1 text-sm text-red-600" />
+                    </div>
 
-                  <CTAButton href="/thank-you/audit" variant="primary" size="large" className="w-full">
-                    Get Your Free SEO Audit
-                  </CTAButton>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Company Name
+                      </label>
+                      <input
+                        type="text"
+                        name="company"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                      <ValidationError prefix="Company" field="company" errors={state.errors} className="mt-1 text-sm text-red-600" />
+                    </div>
 
-                  <p className="text-sm text-gray-500 text-center">
-                    Your audit report will be delivered within 24-48 hours
-                  </p>
-                </form>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Main Competitors (Optional)
+                      </label>
+                      <textarea
+                        name="competitors"
+                        rows={3}
+                        placeholder="List your main competitors' websites"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                      <ValidationError prefix="Competitors" field="competitors" errors={state.errors} className="mt-1 text-sm text-red-600" />
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        What are your main SEO challenges?
+                      </label>
+                      <textarea
+                        name="challenges"
+                        rows={3}
+                        placeholder="Tell us about your current SEO challenges and goals"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                      <ValidationError prefix="Challenges" field="challenges" errors={state.errors} className="mt-1 text-sm text-red-600" />
+                    </div>
+
+                    <div>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          name="privacy"
+                          className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                          required
+                        />
+                        <span className="ml-2 text-sm text-gray-600">
+                          I agree to receive the audit report and follow-up communications.
+                          View our{' '}
+                          <Link href="/privacy-policy" className="text-blue-600 hover:underline">
+                            Privacy Policy
+                          </Link>
+                        </span>
+                      </label>
+                      <ValidationError prefix="Privacy" field="privacy" errors={state.errors} className="mt-1 text-sm text-red-600" />
+                    </div>
+
+                    <button
+                      type="submit"
+                      disabled={state.submitting}
+                      className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {state.submitting ? 'Sending...' : 'Get Your Free SEO Audit'}
+                    </button>
+
+                    <ValidationError errors={state.errors} className="mt-2 text-sm text-red-600" />
+
+                    <p className="text-sm text-gray-500 text-center">
+                      Your audit report will be delivered within 24-48 hours
+                    </p>
+                  </form>
+                )}
               </div>
             </div>
           </div>
