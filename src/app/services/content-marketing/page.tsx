@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Content Marketing Services | Strategic Content Creation',

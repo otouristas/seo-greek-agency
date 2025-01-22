@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
+import type { Metadata } from 'next'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 
 export const metadata: Metadata = {

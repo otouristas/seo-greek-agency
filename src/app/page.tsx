@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
   },
   alternates: {
-    canonical: 'https://www.kasiotisg.com',
+    canonical: 'https://kasiotisg.com',
   }
 }
 
