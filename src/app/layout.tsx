@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.kasiotisg.com',
+    url: '/',
     siteName: 'SEO Greek Agency',
     images: [
       {
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
   }
 }
 

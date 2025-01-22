@@ -153,10 +153,10 @@ export const metadata: Metadata = {
     title: 'Thank You | Message Received',
     description: 'Thank you for contacting SEO Greek Agency. We\'ll get back to you shortly.',
     type: 'website',
-    url: 'https://kasiotisg.com/thank-you/contact',
+    url: '/thank-you/contact',
     images: [
       {
-        url: 'https://kasiotisg.com/images/thank-you-contact.jpg',
+        url: '/images/thank-you-contact.jpg',
         width: 1200,
         height: 630,
         alt: 'Thank You for Contacting Us',
