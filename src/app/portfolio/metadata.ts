@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'Explore our SEO portfolio and see the results we\'ve achieved for our clients. View case studies and examples of our successful SEO campaigns.',
   },
   alternates: {
-    canonical: 'https://www.kasiotisg.com/portfolio',
+    canonical: '/portfolio',
   }
 }

@@ -1,0 +1,89 @@
+URL and Canonical Inventory
+=========================
+
+Root/Layout
+----------
+Canonical: /
+Base URL: https://kasiotisg.com
+OpenGraph URL: /
+Images:
+- /logo.svg
+- /favicon.svg
+- /og-image.jpg
+
+Home Page
+---------
+Canonical: /
+
+Contact Page
+-----------
+Canonical: /contact
+OpenGraph URL: /contact
+Images: /og-image.jpg
+
+Thank You Pages
+-------------
+Contact Thank You:
+- Canonical: /thank-you/contact
+- OpenGraph URL: /thank-you/contact
+- Images: /images/thank-you-contact.jpg
+
+Audit Thank You:
+- Canonical: /thank-you/audit
+
+Services Pages
+------------
+Main Services:
+- Canonical: /services
+
+Analytics & Reporting:
+- Canonical: /services/analytics-reporting
+- OpenGraph URL: /services/analytics-reporting
+- Images: /services/analytics-reporting.jpg
+
+Technical SEO:
+- Canonical: /services/technical-seo
+- OpenGraph URL: /services/technical-seo
+- Images: /services/tech-seo-og-image.jpg
+
+SEO Audits:
+- Canonical: /services/seo-audits
+
+Off-Page SEO:
+- Canonical: /services/off-page-seo
+
+On-Page SEO:
+- Canonical: /services/on-page-seo
+
+Keyword Research:
+- Canonical: /services/keyword-research
+
+Local SEO:
+- Canonical: /services/local-seo
+
+E-commerce SEO:
+- Canonical: /services/ecommerce-seo
+
+Content Marketing:
+- Canonical: /services/content-marketing
+- OpenGraph URL: /services/content-marketing
+- Images: /services/content-plan.svg
+
+Other Pages
+----------
+Privacy Policy:
+- Canonical: /privacy-policy
+
+Terms of Service:
+- Canonical: /terms-of-service
+
+Portfolio:
+- Canonical: /portfolio
+
+Pricing:
+- Canonical: /pricing
+
+Notes:
+1. All URLs are relative to the base URL (https://kasiotisg.com)
+2. Some metadata files still contain absolute URLs that should be updated to relative paths
+3. OpenGraph images should be consistent across pages

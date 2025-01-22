@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'We provide transparent SEO analytics and reporting to track your progress, measure ROI, and demonstrate the impact of our services on your business.',
   },
   alternates: {
-    canonical: 'https://www.kasiotisg.com/services/analytics-reporting',
+    canonical: '/services/analytics-reporting',
   }
 }

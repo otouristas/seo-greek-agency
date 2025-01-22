@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'Increase your online store\'s visibility and sales with our specialized e-commerce SEO services. Optimize product pages, categories, and drive more conversions.',
   },
   alternates: {
-    canonical: 'https://www.kasiotisg.com/services/ecommerce-seo',
+    canonical: '/services/ecommerce-seo',
   }
 }

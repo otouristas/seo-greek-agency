@@ -68,10 +68,10 @@ export default function CookiePolicy() {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">Contact us</h2>
-          <p>
-            If you have any questions about our use of cookies, please contact us at{' '}
-            <a href="mailto:privacy@seogreekagency.com" className="text-blue-600 hover:text-blue-700">
-              privacy@seogreekagency.com
+          <p className="mb-4">
+            If you have any questions about our Cookie Policy, please contact us at{' '}
+            <a href="mailto:seo@kasiotisg.com" className="text-blue-600 hover:text-blue-700">
+              privacy@kasiotisg.com
             </a>
           </p>
         </section>

@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'Attract local customers and dominate your city\'s search results with our targeted local SEO services. Optimize your Google My Business and local citations.',
   },
   alternates: {
-    canonical: 'https://www.kasiotisg.com/services/local-seo',
+    canonical: '/services/local-seo',
   }
 }
