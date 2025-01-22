@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'Get a comprehensive SEO audit to identify areas for improvement and unlock your website\'s full potential. We analyze your website and provide actionable insights.',
   },
   alternates: {
-    canonical: '/services/seo-audits',
+    canonical: 'https://kasiotisg.com/services/seo-audits',
   }
 }

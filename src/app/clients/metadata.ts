@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'See the diverse range of businesses we\'ve helped achieve their online goals with our expert SEO services.',
   },
   alternates: {
-    canonical: '/clients',
+    canonical: 'https://kasiotisg.com/clients',
   }
 }

@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'Improve your website\'s on-page elements, including content, meta tags, and internal linking, to boost search engine visibility and user experience.',
   },
   alternates: {
-    canonical: '/services/on-page-seo',
+    canonical: 'https://kasiotisg.com/services/on-page-seo',
   }
 }

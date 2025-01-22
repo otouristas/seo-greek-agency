@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'Enhance your website\'s authority and search engine rankings with our effective off-page SEO and high-quality link building strategies.',
   },
   alternates: {
-    canonical: '/services/off-page-seo',
+    canonical: 'https://kasiotisg.com/services/off-page-seo',
   }
 }

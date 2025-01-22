@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'View our transparent SEO service pricing plans. Choose the package that best fits your business needs and budget. Custom solutions available.',
   },
   alternates: {
-    canonical: '/pricing',
+    canonical: 'https://kasiotisg.com/pricing',
   }
 }

@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Contact Us | Expert SEO Services',
   description: 'Ready to improve your search rankings? Contact SEO Greek Agency today for a consultation and discover how we can help grow your online presence.',
   alternates: {
-    canonical: '/contact',
+    canonical: 'https://kasiotisg.com/contact',
   },
   openGraph: {
     title: 'Contact Us | Expert SEO Services',
