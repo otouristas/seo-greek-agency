@@ -4,8 +4,11 @@ import { format } from 'date-fns'
 import BlogLayout from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'Link Building Strategies That Actually Work',
-  description: 'Discover effective link building strategies that actually work in 2025. Learn how to build high-quality backlinks, improve your website\'s authority, and boost your search engine rankings.',
+  title: 'Effective Link Building Strategies for 2025',
+  description: 'Discover proven link building strategies that work in 2025. Learn how to build high-quality backlinks and improve your website\'s authority.',
+  alternates: {
+    canonical: '/blog/effective-link-building-strategies',
+  },
   openGraph: {
     title: 'Link Building Strategies That Actually Work',
     description: 'Discover effective link building strategies that actually work in 2025. Learn how to build high-quality backlinks, improve your website\'s authority, and boost your search engine rankings.',

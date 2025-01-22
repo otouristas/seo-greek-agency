@@ -2,8 +2,11 @@ import Image from 'next/image'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Another SEO Guru | Your Partner in SEO Success',
-  description: 'Learn about Another SEO Guru\'s mission, values, and team of experienced SEO experts dedicated to helping your business achieve online success.',
+  title: 'About Us | SEO Greek Agency',
+  description: 'Learn about SEO Greek Agency - your trusted partner for professional SEO services. Our team of experts is dedicated to helping your business grow online.',
+  alternates: {
+    canonical: '/about',
+  },
   openGraph: {
     title: 'About Another SEO Guru | Your Partner in SEO Success',
     description: 'Learn about Another SEO Guru\'s mission, values, and team of experienced SEO experts dedicated to helping your business achieve online success.',
@@ -12,9 +15,6 @@ export const metadata: Metadata = {
     title: 'About Another SEO Guru | Your Partner in SEO Success',
     description: 'Learn about Another SEO Guru\'s mission, values, and team of experienced SEO experts dedicated to helping your business achieve online success.',
   },
-  alternates: {
-    canonical: 'https://www.anotherseoguru.com/about',
-  }
 }
 
 export default function AboutPage() {

@@ -2,6 +2,28 @@ import Image from 'next/image'
 import Hero from '@/components/Hero'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 
+export const metadata: Metadata = {
+  title: 'E-commerce SEO Services | Drive More Sales',
+  description: 'Specialized e-commerce SEO services to increase your online store\'s visibility and sales. Expert optimization for product pages, categories, and more.',
+  alternates: {
+    canonical: '/services/ecommerce-seo',
+  },
+  openGraph: {
+    title: 'E-commerce SEO Services | Drive More Sales',
+    description: 'Specialized e-commerce SEO services to increase your online store\'s visibility and sales. Expert optimization for product pages, categories, and more.',
+    url: 'https://example.com/services/ecommerce-seo',
+    type: 'website',
+    images: [
+      {
+        url: 'https://example.com/services/ecommerce-seo-image.jpg',
+        width: 800,
+        height: 600,
+        alt: 'E-commerce SEO Services',
+      },
+    ],
+  },
+}
+
 export default function EcommerceSEOPage() {
   const services = [
     {

@@ -12,18 +12,18 @@ interface Service {
 }
 
 export const metadata: Metadata = {
-  title: 'SEO Services | Keyword Research, On-Page, Off-Page & More',
-  description: 'Explore our comprehensive SEO services, including keyword research, on-page optimization, link building, local SEO, and technical SEO.',
+  title: 'Our SEO Services | Professional SEO Solutions',
+  description: 'Comprehensive SEO services tailored to your business needs. From technical SEO to content optimization, we help you achieve sustainable organic growth.',
+  alternates: {
+    canonical: '/services',
+  },
   openGraph: {
-    title: 'SEO Services | Keyword Research, On-Page, Off-Page & More',
-    description: 'Explore our comprehensive SEO services, including keyword research, on-page optimization, link building, local SEO, and technical SEO.',
+    title: 'Our SEO Services | Professional SEO Solutions',
+    description: 'Comprehensive SEO services tailored to your business needs. From technical SEO to content optimization, we help you achieve sustainable organic growth.',
   },
   twitter: {
-    title: 'SEO Services | Keyword Research, On-Page, Off-Page & More',
-    description: 'Explore our comprehensive SEO services, including keyword research, on-page optimization, link building, local SEO, and technical SEO.',
-  },
-  alternates: {
-    canonical: 'https://www.kasiotisg.com/services',
+    title: 'Our SEO Services | Professional SEO Solutions',
+    description: 'Comprehensive SEO services tailored to your business needs. From technical SEO to content optimization, we help you achieve sustainable organic growth.',
   }
 }
 

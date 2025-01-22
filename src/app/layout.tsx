@@ -11,12 +11,15 @@ import ChatAgent from '@/components/chat/ChatAgent'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.kasiotisg.com'),
+  metadataBase: new URL('https://kasiotisg.com'),
   title: {
     template: '%s | SEO Greek Agency',
     default: 'SEO Greek Agency | Expert SEO Services'
   },
   description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'SEO Greek Agency | Expert SEO Services',
     description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
@@ -51,9 +54,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'your-google-verification-code',
-  },
-  alternates: {
-    canonical: 'https://www.kasiotisg.com'
   }
 }
 

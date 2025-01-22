@@ -1,6 +1,18 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
 
+export const metadata: Metadata = {
+  title: 'Terms of Service | SEO Greek Agency',
+  description: 'SEO Greek Agency\'s terms of service. Read our terms and conditions for using our services.',
+  alternates: {
+    canonical: '/terms-of-service',
+  },
+  openGraph: {
+    title: 'Terms of Service | SEO Greek Agency',
+    description: 'SEO Greek Agency\'s terms of service. Read our terms and conditions for using our services.',
+  },
+}
+
 export default function TermsOfServicePage() {
   return (
     <div className="pb-20">

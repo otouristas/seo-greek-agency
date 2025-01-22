@@ -275,6 +275,41 @@ function ContactForm() {
   )
 }
 
+export const metadata: Metadata = {
+  title: 'Contact Us | SEO Greek Agency',
+  description: 'Get in touch with SEO Greek Agency. Contact us for professional SEO services and digital marketing solutions.',
+  alternates: {
+    canonical: '/contact',
+  },
+  openGraph: {
+    title: 'Contact Us | SEO Greek Agency',
+    description: 'Get in touch with SEO Greek Agency. Contact us for professional SEO services and digital marketing solutions.',
+    type: 'website',
+    url: 'https://seogreekagency.com/contact',
+    images: [
+      {
+        url: 'https://seogreekagency.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'SEO Greek Agency',
+      },
+    ],
+  },
+  twitter: {
+    title: 'Contact Us | SEO Greek Agency',
+    description: 'Get in touch with SEO Greek Agency. Contact us for professional SEO services and digital marketing solutions.',
+    cardType: 'summary_large_image',
+    images: [
+      {
+        url: 'https://seogreekagency.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'SEO Greek Agency',
+      },
+    ],
+  },
+}
+
 export default function ContactPage() {
   return (
     <div className="bg-gray-50">

@@ -1,6 +1,28 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
 
+export const metadata: Metadata = {
+  title: 'Content Marketing Services | Strategic Content Creation',
+  description: 'Expert content marketing services to help you create engaging, SEO-optimized content that drives traffic and conversions.',
+  alternates: {
+    canonical: '/services/content-marketing',
+  },
+  openGraph: {
+    title: 'Content Marketing Services | Strategic Content Creation',
+    description: 'Expert content marketing services to help you create engaging, SEO-optimized content that drives traffic and conversions.',
+    url: '/services/content-marketing',
+    type: 'website',
+    images: [
+      {
+        url: '/services/content-plan.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Content Marketing Services',
+      },
+    ],
+  },
+}
+
 export default function ContentMarketingPage() {
   const contentTypes = [
     {

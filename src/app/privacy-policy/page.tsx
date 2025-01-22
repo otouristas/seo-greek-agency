@@ -1,6 +1,18 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
 
+export const metadata: Metadata = {
+  title: 'Privacy Policy | SEO Greek Agency',
+  description: 'SEO Greek Agency\'s privacy policy. Learn how we collect, use, and protect your personal information.',
+  alternates: {
+    canonical: '/privacy-policy',
+  },
+  openGraph: {
+    title: 'Privacy Policy | SEO Greek Agency',
+    description: 'SEO Greek Agency\'s privacy policy. Learn how we collect, use, and protect your personal information.',
+  },
+}
+
 export default function PrivacyPolicyPage() {
   return (
     <div className="pb-20">

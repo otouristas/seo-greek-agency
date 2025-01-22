@@ -6,6 +6,9 @@ import BlogLayout from '@/components/BlogLayout'
 export const metadata: Metadata = {
   title: 'Local SEO Strategies for 2025: A Complete Guide',
   description: 'Discover the most effective local SEO strategies for 2025. Learn how to optimize your Google Business Profile, create local content, build local links, manage reviews, and dominate local search.',
+  alternates: {
+    canonical: '/blog/local-seo-strategies-2025',
+  },
   openGraph: {
     title: 'Local SEO Strategies for 2025: A Complete Guide',
     description: 'Discover the most effective local SEO strategies for 2025. Learn how to optimize your Google Business Profile, create local content, build local links, manage reviews, and dominate local search.',

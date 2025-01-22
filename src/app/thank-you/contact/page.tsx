@@ -141,3 +141,25 @@ export default function ThankYouContactPage() {
     </div>
   )
 }
+
+export const metadata: Metadata = {
+  title: 'Thank You | Message Received',
+  description: 'Thank you for contacting SEO Greek Agency. We\'ll get back to you shortly.',
+  alternates: {
+    canonical: '/thank-you/contact',
+  },
+  openGraph: {
+    title: 'Thank You | Message Received',
+    description: 'Thank you for contacting SEO Greek Agency. We\'ll get back to you shortly.',
+    type: 'website',
+    url: 'https://www.seogreekagency.com/thank-you/contact',
+    images: [
+      {
+        url: 'https://www.seogreekagency.com/images/thank-you-contact.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Thank You for Contacting Us',
+      },
+    ],
+  },
+}

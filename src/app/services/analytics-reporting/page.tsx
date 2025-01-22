@@ -2,6 +2,28 @@ import Image from 'next/image'
 import Hero from '@/components/Hero'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 
+export const metadata: Metadata = {
+  title: 'SEO Analytics & Reporting Services | Data-Driven Insights',
+  description: 'Comprehensive SEO analytics and reporting services. Get actionable insights from your data with custom reports and expert analysis.',
+  alternates: {
+    canonical: '/services/analytics-reporting',
+  },
+  openGraph: {
+    title: 'SEO Analytics & Reporting Services | Data-Driven Insights',
+    description: 'Comprehensive SEO analytics and reporting services. Get actionable insights from your data with custom reports and expert analysis.',
+    url: '/services/analytics-reporting',
+    type: 'website',
+    images: [
+      {
+        url: '/services/analytics-reporting.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'SEO Analytics & Reporting Services',
+      },
+    ],
+  },
+}
+
 export default function AnalyticsReportingPage() {
   const features = [
     {

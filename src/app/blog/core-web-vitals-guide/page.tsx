@@ -4,8 +4,11 @@ import { format } from 'date-fns'
 import BlogLayout from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'Core Web Vitals: A Complete Guide',
-  description: 'A comprehensive guide to Core Web Vitals (LCP, FID, CLS). Learn how to optimize these key metrics for improved SEO performance and a better user experience.',
+  title: 'Core Web Vitals Guide: Optimize Your Website Performance',
+  description: 'Complete guide to Core Web Vitals. Learn how to measure and improve LCP, FID, and CLS for better user experience and SEO performance.',
+  alternates: {
+    canonical: '/blog/core-web-vitals-guide',
+  },
   openGraph: {
     title: 'Core Web Vitals: A Complete Guide',
     description: 'A comprehensive guide to Core Web Vitals (LCP, FID, CLS). Learn how to optimize these key metrics for improved SEO performance and a better user experience.',

@@ -4,8 +4,11 @@ import { format } from 'date-fns'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'SEO Blog | Insights, Tips & News',
-  description: 'Stay up-to-date with the latest SEO trends, tips, and news on the Another SEO Guru blog. Learn how to improve your website\'s search engine performance.',
+  title: 'SEO Blog | Latest SEO Insights & Strategies',
+  description: 'Stay updated with the latest SEO trends, strategies, and insights. Our blog covers everything from technical SEO to content optimization.',
+  alternates: {
+    canonical: '/blog',
+  },
   openGraph: {
     title: 'SEO Blog | Insights, Tips & News',
     description: 'Stay up-to-date with the latest SEO trends, tips, and news on the Another SEO Guru blog. Learn how to improve your website\'s search engine performance.',
@@ -14,9 +17,6 @@ export const metadata: Metadata = {
     title: 'SEO Blog | Insights, Tips & News',
     description: 'Stay up-to-date with the latest SEO trends, tips, and news on the Another SEO Guru blog. Learn how to improve your website\'s search engine performance.',
   },
-  alternates: {
-    canonical: 'https://www.anotherseoguru.com/blog',
-  }
 }
 
 interface BlogPost {

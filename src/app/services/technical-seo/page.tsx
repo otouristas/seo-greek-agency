@@ -2,6 +2,28 @@ import Image from 'next/image'
 import Hero from '@/components/Hero'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 
+export const metadata: Metadata = {
+  title: 'Technical SEO Services | Expert Technical Optimization',
+  description: 'Professional technical SEO services to improve your website\'s crawlability, indexability, and performance. Get expert technical optimization for better rankings.',
+  alternates: {
+    canonical: '/services/technical-seo',
+  },
+  openGraph: {
+    title: 'Technical SEO Services | Expert Technical Optimization',
+    description: 'Professional technical SEO services to improve your website\'s crawlability, indexability, and performance. Get expert technical optimization for better rankings.',
+    url: '/services/technical-seo',
+    type: 'website',
+    images: [
+      {
+        url: '/services/tech-seo-og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Technical SEO Services',
+      },
+    ],
+  },
+}
+
 export default function TechnicalSEOPage() {
   const services = [
     {

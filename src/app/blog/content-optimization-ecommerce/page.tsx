@@ -6,6 +6,9 @@ import BlogLayout from '@/components/BlogLayout'
 export const metadata: Metadata = {
   title: 'Content Optimization Tips for E-commerce: Drive Rankings and Sales',
   description: 'Learn how to optimize your e-commerce content for better search rankings and increased sales. Discover tips for product pages, category pages, descriptions, schema markup, and more.',
+  alternates: {
+    canonical: '/blog/content-optimization-ecommerce',
+  },
   openGraph: {
     title: 'Content Optimization Tips for E-commerce: Drive Rankings and Sales',
     description: 'Learn how to optimize your e-commerce content for better search rankings and increased sales. Discover tips for product pages, category pages, descriptions, schema markup, and more.',
