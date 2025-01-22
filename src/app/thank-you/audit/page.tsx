@@ -1,19 +1,20 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function ThankYouAuditPage() {
-  export const metadata: Metadata = {
+export const metadata: Metadata = {
+  title: 'Thank You | SEO Audit Request Received',
+  description: 'Thank you for requesting an SEO audit. We\'ll analyze your website and get back to you with our findings.',
+  alternates: {
+    canonical: '/thank-you/audit',
+  },
+  openGraph: {
     title: 'Thank You | SEO Audit Request Received',
     description: 'Thank you for requesting an SEO audit. We\'ll analyze your website and get back to you with our findings.',
-    alternates: {
-      canonical: '/thank-you/audit',
-    },
-    openGraph: {
-      title: 'Thank You | SEO Audit Request Received',
-      description: 'Thank you for requesting an SEO audit. We\'ll analyze your website and get back to you with our findings.',
-    },
-  };
+  },
+}
 
+export default function ThankYouAuditPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="container mx-auto px-4 py-20">
