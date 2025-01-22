@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: [
+      { url: '/logo.svg', type: 'image/svg+xml' },
+      { url: '/favicon.svg', type: 'image/svg+xml' }
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/logo.svg',
+  },
   openGraph: {
     title: 'SEO Greek Agency | Expert SEO Services',
     description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
@@ -46,11 +54,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  },
-  icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
-    apple: '/apple-touch-icon.png',
   },
   verification: {
     google: 'your-google-verification-code',
