@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Grid -->
+  <g stroke="#E5E7EB" stroke-width="1">
+    <!-- Vertical Lines -->
+    <line x1="100" y1="50" x2="100" y2="350" />
+    <line x1="200" y1="50" x2="200" y2="350" />
+    <line x1="300" y1="50" x2="300" y2="350" />
+    <line x1="400" y1="50" x2="400" y2="350" />
+    <line x1="500" y1="50" x2="500" y2="350" />
+    <line x1="600" y1="50" x2="600" y2="350" />
+    <line x1="700" y1="50" x2="700" y2="350" />
+
+    <!-- Horizontal Lines -->
+    <line x1="50" y1="100" x2="750" y2="100" />
+    <line x1="50" y1="150" x2="750" y2="150" />
+    <line x1="50" y1="200" x2="750" y2="200" />
+    <line x1="50" y1="250" x2="750" y2="250" />
+    <line x1="50" y1="300" x2="750" y2="300" />
+  </g>
+
+  <!-- Axis Labels -->
+  <text x="400" y="380" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle">Time (Months)</text>
+  <text x="30" y="200" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle" transform="rotate(-90, 30, 200)">Domain Authority</text>
+
+  <!-- Month Labels -->
+  <text x="100" y="365" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">M1</text>
+  <text x="200" y="365" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">M2</text>
+  <text x="300" y="365" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">M3</text>
+  <text x="400" y="365" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">M4</text>
+  <text x="500" y="365" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">M5</text>
+  <text x="600" y="365" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">M6</text>
+  <text x="700" y="365" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">M7</text>
+
+  <!-- DA Score Labels -->
+  <text x="60" y="300" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="end">20</text>
+  <text x="60" y="250" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="end">30</text>
+  <text x="60" y="200" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="end">40</text>
+  <text x="60" y="150" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="end">50</text>
+  <text x="60" y="100" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="end">60</text>
+
+  <!-- Growth Line -->
+  <path d="M100 280 L200 260 L300 230 L400 190 L500 160 L600 120 L700 90" 
+        stroke="#3B82F6" 
+        stroke-width="3"
+        fill="none"/>
+
+  <!-- Data Points -->
+  <circle cx="100" cy="280" r="4" fill="#3B82F6"/>
+  <circle cx="200" cy="260" r="4" fill="#3B82F6"/>
+  <circle cx="300" cy="230" r="4" fill="#3B82F6"/>
+  <circle cx="400" cy="190" r="4" fill="#3B82F6"/>
+  <circle cx="500" cy="160" r="4" fill="#3B82F6"/>
+  <circle cx="600" cy="120" r="4" fill="#3B82F6"/>
+  <circle cx="700" cy="90" r="4" fill="#3B82F6"/>
+
+  <!-- Gradient Area Under Line -->
+  <path d="M100 280 L200 260 L300 230 L400 190 L500 160 L600 120 L700 90 L700 350 L100 350 Z" 
+        fill="url(#blue-gradient)"
+        opacity="0.1"/>
+
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="blue-gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Legend -->
+  <rect x="550" y="30" width="180" height="30" rx="4" fill="white" stroke="#E5E7EB"/>
+  <circle cx="570" cy="45" r="4" fill="#3B82F6"/>
+  <text x="590" y="49" font-family="Arial" font-size="12" fill="#4B5563">Domain Authority Growth</text>
+</svg>

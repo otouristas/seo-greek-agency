@@ -1,86 +1,146 @@
 # SEO Greek Agency Image Inventory
 
+## Technical SEO Icons (Missing - Need to be added)
+- /public/icons/site-architecture.svg - Site Architecture Icon
+- /public/icons/page-speed.svg - Page Speed Icon
+- /public/icons/mobile.svg - Mobile Optimization Icon
+- /public/icons/schema-markup.svg - Schema Markup Icon
+- /public/icons/sitemap.svg - XML Sitemap Icon
+- /public/icons/security.svg - Security Icon
+- /public/icons/crawl.svg - Crawl Optimization Icon
+- /public/icons/core-web-vitals.svg - Core Web Vitals Icon
+- /public/icons/lcp.svg - Largest Contentful Paint Icon
+- /public/icons/fid.svg - First Input Delay Icon
+- /public/icons/cls.svg - Cumulative Layout Shift Icon
+
+## On-Page SEO Icons (Missing - Need to be added)
+- /public/icons/meta-tags.svg - Meta Tags Icon
+- /public/icons/content.svg - Content Optimization Icon
+- /public/icons/url.svg - URL Structure Icon
+- /public/icons/internal-links.svg - Internal Linking Icon
+- /public/icons/image-opt.svg - Image Optimization Icon
+- /public/icons/headers.svg - Header Tags Icon
+
+## Keyword Research Icons (Missing - Need to be added)
+- /public/icons/research.svg - Research & Discovery Icon
+- /public/icons/analysis.svg - Data Analysis Icon
+- /public/icons/strategy.svg - Strategy Development Icon
+- /public/icons/implementation.svg - Implementation Plan Icon
+
+## Local SEO Icons (Missing - Need to be added)
+- /public/icons/google-business.svg - Google Business Profile Icon
+- /public/icons/citations.svg - Local Citations Icon
+- /public/icons/local-links.svg - Local Link Building Icon
+- /public/icons/reviews.svg - Review Management Icon
+- /public/icons/local-content.svg - Local Content Icon
+- /public/icons/schema.svg - Local Schema Icon
+
 ## Blog Images
-- /blog/ai-seo-future.jpg - AI SEO Future Blog Post Image
-- /blog/core-web-vitals.jpg - Core Web Vitals Blog Post Image
-- /blog/ecommerce-content.jpg - E-commerce Content Blog Post Image
-- /blog/link-building.jpg - Link Building Blog Post Image
-- /blog/local-seo.jpg - Local SEO Blog Post Image
+- /public/blog/ai-seo-future.jpg - AI SEO Future Blog Post Image
+- /public/blog/core-web-vitals.jpg - Core Web Vitals Blog Post Image
+- /public/blog/ecommerce-content.jpg - E-commerce Content Blog Post Image
+- /public/blog/link-building.jpg - Link Building Blog Post Image
+- /public/blog/local-seo.jpg - Local SEO Blog Post Image
 
 ## Client Logos (SVG)
-- /clients/edulearn-logo.svg - EduLearn Client Logo
-- /clients/fitlife-logo.svg - FitLife Client Logo
-- /clients/healthtech-logo.svg - HealthTech Client Logo
-- /clients/petparadise-logo.svg - PetParadise Client Logo
-- /clients/travelwise-logo.svg - TravelWise Client Logo
-- /clients/urbaneats-logo.svg - UrbanEats Client Logo
+- /public/clients/edulearn-logo.svg - EduLearn Client Logo
+- /public/clients/fitlife-logo.svg - FitLife Client Logo
+- /public/clients/healthtech-logo.svg - HealthTech Client Logo
+- /public/clients/petparadise-logo.svg - PetParadise Client Logo
+- /public/clients/travelwise-logo.svg - TravelWise Client Logo
+- /public/clients/urbaneats-logo.svg - UrbanEats Client Logo
 
 ## Main Site Assets
-- /favicon.svg - Website Favicon
-- /file.svg - File Icon
-- /globe.svg - Globe Icon
-- /hero-illustration.svg - Hero Section Illustration
-- /hero-pattern.svg - Hero Background Pattern
-- /logo.svg - Main Site Logo
-- /next.svg - Next.js Logo
+- /public/file.svg - File Icon
+- /public/globe.svg - Globe Icon
+- /public/hero-illustration.svg - Hero Section Illustration
+- /public/hero-pattern.svg - Hero Background Pattern
+- /public/logo.svg - Main Site Logo
+- /public/next.svg - Next.js Logo
+- /public/why-choose-us.svg - Why Choose Us Illustration
 
 ## General Images
-- /images/about-preview.jpg - About Section Preview Image
-- /images/cta-background.jpg - Call-to-Action Background
-- /images/hero.jpg - Main Hero Image
-- /images/testimonials-bg.jpg - Testimonials Background
+- /public/images/about-preview.jpg - About Section Preview Image
+- /public/images/cta-background.jpg - Call-to-Action Background
+- /public/images/hero.jpg - Main Hero Image
+- /public/images/testimonials-bg.jpg - Testimonials Background
 
 ## Portfolio
-- /portfolio/finpro-logo.svg - FinPro Portfolio Logo
-- /portfolio/greenliving-logo.svg - GreenLiving Portfolio Logo
-- /portfolio/techstart-logo.svg - TechStart Portfolio Logo
+- /public/portfolio/finpro-logo.svg - FinPro Portfolio Logo
+- /public/portfolio/greenliving-logo.svg - GreenLiving Portfolio Logo
+- /public/portfolio/techstart-logo.svg - TechStart Portfolio Logo
 
 ## Service Images
 ### Analytics & Reporting
-- /services/analytics-reporting/hero.jpg - Analytics Service Hero Image
+- /public/services/analytics-reporting/hero.jpg - Analytics Service Hero Image
 
 ### Content Marketing
-- /services/content-marketing/hero.jpg - Content Marketing Hero Image
+- /public/services/content-marketing/hero.jpg - Content Marketing Hero Image
 
 ### E-commerce SEO
-- /services/ecommerce-seo/hero.jpg - E-commerce SEO Hero Image
+- /public/services/ecommerce-seo/hero.jpg - E-commerce SEO Hero Image
 
 ### Keyword Research
-- /services/keyword-research/hero.jpg - Keyword Research Hero Image
-- /services/keyword-research/process.jpg - Keyword Research Process Image
-- /services/keyword-research/tools.jpg - Keyword Research Tools Image
+- /public/services/keyword-research/hero.jpg - Keyword Research Hero Image
+- /public/services/keyword-research/process.jpg - Keyword Research Process Image
+- /public/services/keyword-research/tools.jpg - Keyword Research Tools Image
+- /public/services/keyword-research-visualization.svg - Keyword Research Visualization
 
 ### Local SEO
-- /services/local-seo/hero.jpg - Local SEO Hero Image
+- /public/services/local-seo/hero.jpg - Local SEO Hero Image
+- /public/services/local-search-visualization.svg - Local Search Results Visualization
 
 ### Off-page SEO
-- /services/off-page-seo/hero.jpg - Off-page SEO Hero Image
+- /public/services/off-page-seo/hero.jpg - Off-page SEO Hero Image
 
 ### On-page SEO
-- /services/on-page-seo/hero.jpg - On-page SEO Hero Image
-- /services/on-page-seo-example.svg - On-page SEO Example Illustration
+- /public/services/on-page-seo/hero.jpg - On-page SEO Hero Image
+- /public/services/on-page-seo/on-page-seo-example.jpg - On-page SEO Example Image
+- /public/services/on-page-seo-example.svg - On-page SEO Example Illustration
 
 ### SEO Audits
-- /services/seo-audits/hero.jpg - SEO Audits Hero Image
-- /services/technical-audit-visualization.svg - Technical Audit Visualization
-- /services/technical-seo/hero.jpg - Technical SEO Hero Image
+- /public/services/seo-audits/hero.jpg - SEO Audits Hero Image
+- /public/services/technical-audit-visualization.svg - Technical Audit Visualization
+- /public/services/technical-seo/hero.jpg - Technical SEO Hero Image
 
 ### Service Process Icons
-- /services/audit-process.svg - Audit Process Icon
-- /services/audit-report-preview.svg - Audit Report Preview
-- /services/before-optimization.svg - Before Optimization Example
-- /services/after-optimization.svg - After Optimization Example
+- /public/services/audit-process.svg - Audit Process Icon
+- /public/services/audit-report-preview.svg - Audit Report Preview
+- /public/services/before-optimization.svg - Before Optimization Example
+- /public/services/after-optimization.svg - After Optimization Example
 
 ## Social Media Icons
-- /social/facebook.svg - Facebook Icon
-- /social/instagram.svg - Instagram Icon
-- /social/linkedin.svg - LinkedIn Icon
-- /social/twitter.svg - Twitter Icon
+- /public/social/facebook.svg - Facebook Icon
+- /public/social/instagram.svg - Instagram Icon
+- /public/social/linkedin.svg - LinkedIn Icon
+- /public/social/twitter.svg - Twitter Icon
 
 ## Team Member Photos
-- /team/emma-davis.jpg - Emma Davis Team Photo
-- /team/john-smith.jpg - John Smith Team Photo
-- /team/michael-chen.jpg - Michael Chen Team Photo
-- /team/sarah-johnson.jpg - Sarah Johnson Team Photo
+- /public/team/emma-davis.jpg - Emma Davis Team Photo
+- /public/team/john-smith.jpg - John Smith Team Photo
+- /public/team/michael-chen.jpg - Michael Chen Team Photo
+- /public/team/sarah-johnson.jpg - Sarah Johnson Team Photo
 
-Note: All paths are relative to the /public directory
+## Testimonial Photos
+- /public/testimonials/avatar1.jpg - Sarah Johnson's Testimonial Avatar
+- /public/testimonials/avatar2.jpg - Michael Chen's Testimonial Avatar
+- /public/testimonials/avatar3.jpg - Emma Davis's Testimonial Avatar
+
+## Home Page Images
+- /public/home/hero.jpg - Home Page Hero Image
+- /public/home/section1.jpg - Home Page Section 1 Image
+- /public/home/section2.jpg - Home Page Section 2 Image
+
+## About Page Images
+- /public/about/team.jpg - About Page Team Image
+- /public/about/office.jpg - About Page Office Image
+
+## Local SEO Page Images
+- /public/local-seo/local-seo-hero.jpg - Local SEO Hero Image
+- /public/local-seo/local-seo-process.jpg - Local SEO Process Image
+- /public/local-seo/local-seo-tools.jpg - Local SEO Tools Image
+- /public/local-seo/local-seo-visualization.svg - Local SEO Visualization
+
+Note: 
+1. All paths are relative to the project root directory
+2. The icons in the "Technical SEO Icons", "On-Page SEO Icons", "Keyword Research Icons", and "Local SEO Icons" sections are currently missing and need to be added to the /public/icons directory

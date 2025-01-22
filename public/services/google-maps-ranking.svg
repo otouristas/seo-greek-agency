@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Map Background -->
+  <rect width="800" height="600" fill="#E5E7EB"/>
+  <rect width="800" height="600" fill="url(#map-pattern)"/>
+  
+  <!-- Roads -->
+  <path d="M0 300 H800" stroke="#D1D5DB" stroke-width="20"/>
+  <path d="M400 0 V600" stroke="#D1D5DB" stroke-width="15"/>
+  
+  <!-- Business Markers -->
+  <!-- Your Business (Highlighted) -->
+  <g transform="translate(400,300)">
+    <path d="M0 0 L20 -40 A20 20 0 1 0 -20 -40 Z" fill="#3B82F6"/>
+    <circle cx="0" cy="-40" r="15" fill="white"/>
+    <text x="0" y="-35" font-family="Arial" font-size="14" fill="#3B82F6" text-anchor="middle">1</text>
+    <!-- Info Window -->
+    <rect x="-100" y="-120" width="200" height="60" rx="4" fill="white" stroke="#E5E7EB"/>
+    <text x="0" y="-100" font-family="Arial" font-size="14" font-weight="bold" fill="#111827" text-anchor="middle">Your Business Name</text>
+    <text x="0" y="-80" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">⭐⭐⭐⭐⭐ • Open Now</text>
+  </g>
+  
+  <!-- Competitor 1 -->
+  <g transform="translate(300,200)">
+    <path d="M0 0 L15 -30 A15 15 0 1 0 -15 -30 Z" fill="#9CA3AF"/>
+    <circle cx="0" cy="-30" r="12" fill="white"/>
+    <text x="0" y="-26" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">2</text>
+  </g>
+  
+  <!-- Competitor 2 -->
+  <g transform="translate(500,400)">
+    <path d="M0 0 L15 -30 A15 15 0 1 0 -15 -30 Z" fill="#9CA3AF"/>
+    <circle cx="0" cy="-30" r="12" fill="white"/>
+    <text x="0" y="-26" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">3</text>
+  </g>
+  
+  <!-- Competitor 3 -->
+  <g transform="translate(450,250)">
+    <path d="M0 0 L15 -30 A15 15 0 1 0 -15 -30 Z" fill="#9CA3AF"/>
+    <circle cx="0" cy="-30" r="12" fill="white"/>
+    <text x="0" y="-26" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">4</text>
+  </g>
+  
+  <!-- Street Names -->
+  <text x="400" y="280" font-family="Arial" font-size="12" fill="#4B5563">Main Street</text>
+  <text x="420" y="300" transform="rotate(90,420,300)" font-family="Arial" font-size="12" fill="#4B5563">Oak Avenue</text>
+  
+  <!-- Map Controls -->
+  <g transform="translate(740,100)">
+    <rect width="40" height="80" rx="4" fill="white" stroke="#E5E7EB"/>
+    <text x="20" y="30" font-family="Arial" font-size="20" fill="#6B7280" text-anchor="middle">+</text>
+    <line x1="5" y1="40" x2="35" y2="40" stroke="#E5E7EB"/>
+    <text x="20" y="70" font-family="Arial" font-size="20" fill="#6B7280" text-anchor="middle">−</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(20,20)">
+    <rect width="160" height="80" rx="4" fill="white" stroke="#E5E7EB"/>
+    <circle cx="30" cy="30" r="10" fill="#3B82F6"/>
+    <text x="50" y="35" font-family="Arial" font-size="12" fill="#111827">Your Business</text>
+    <circle cx="30" cy="60" r="10" fill="#9CA3AF"/>
+    <text x="50" y="65" font-family="Arial" font-size="12" fill="#111827">Competitors</text>
+  </g>
+  
+  <!-- Map Pattern -->
+  <defs>
+    <pattern id="map-pattern" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="#E5E7EB"/>
+      <path d="M0 0 L50 50 M50 0 L0 50" stroke="#D1D5DB" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+</svg>

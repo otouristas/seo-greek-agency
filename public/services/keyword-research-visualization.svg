@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circles -->
+  <circle cx="400" cy="300" r="250" fill="#F3F4F6" opacity="0.5"/>
+  <circle cx="400" cy="300" r="200" fill="#E5E7EB" opacity="0.3"/>
+  <circle cx="400" cy="300" r="150" fill="#D1D5DB" opacity="0.2"/>
+
+  <!-- Central Search Icon -->
+  <circle cx="400" cy="300" r="80" fill="#3B82F6"/>
+  <circle cx="400" cy="300" r="70" fill="white"/>
+  <path d="M445 300c0 24.853-20.147 45-45 45s-45-20.147-45-45 20.147-45 45-45 45 20.147 45 45zm-5-0.5l35 35" stroke="#3B82F6" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Keyword Bubbles -->
+  <g>
+    <!-- Long-tail Keywords -->
+    <circle cx="200" cy="200" r="40" fill="#60A5FA"/>
+    <text x="200" y="205" text-anchor="middle" fill="white" font-family="Arial" font-size="12">Long-tail</text>
+
+    <circle cx="600" cy="200" r="45" fill="#93C5FD"/>
+    <text x="600" y="205" text-anchor="middle" fill="white" font-family="Arial" font-size="12">Semantic</text>
+
+    <circle cx="250" cy="450" r="35" fill="#BFDBFE"/>
+    <text x="250" y="455" text-anchor="middle" fill="white" font-family="Arial" font-size="12">LSI</text>
+
+    <circle cx="550" cy="450" r="42" fill="#60A5FA"/>
+    <text x="550" y="455" text-anchor="middle" fill="white" font-family="Arial" font-size="12">Intent</text>
+
+    <!-- Connecting Lines -->
+    <line x1="400" y1="300" x2="200" y2="200" stroke="#E5E7EB" stroke-width="2"/>
+    <line x1="400" y1="300" x2="600" y2="200" stroke="#E5E7EB" stroke-width="2"/>
+    <line x1="400" y1="300" x2="250" y2="450" stroke="#E5E7EB" stroke-width="2"/>
+    <line x1="400" y1="300" x2="550" y2="450" stroke="#E5E7EB" stroke-width="2"/>
+  </g>
+
+  <!-- Data Points -->
+  <g>
+    <circle cx="150" cy="300" r="8" fill="#3B82F6"/>
+    <circle cx="650" cy="300" r="8" fill="#3B82F6"/>
+    <circle cx="400" cy="150" r="8" fill="#3B82F6"/>
+    <circle cx="400" cy="450" r="8" fill="#3B82F6"/>
+  </g>
+
+  <!-- Small Decorative Elements -->
+  <g>
+    <circle cx="300" cy="150" r="4" fill="#60A5FA"/>
+    <circle cx="500" cy="150" r="4" fill="#60A5FA"/>
+    <circle cx="300" cy="450" r="4" fill="#60A5FA"/>
+    <circle cx="500" cy="450" r="4" fill="#60A5FA"/>
+    <circle cx="150" cy="250" r="4" fill="#60A5FA"/>
+    <circle cx="650" cy="250" r="4" fill="#60A5FA"/>
+    <circle cx="150" cy="350" r="4" fill="#60A5FA"/>
+    <circle cx="650" cy="350" r="4" fill="#60A5FA"/>
+  </g>
+
+  <!-- Pulse Animation -->
+  <circle cx="400" cy="300" r="100" stroke="#3B82F6" stroke-width="2" opacity="0.2">
+    <animate attributeName="r" from="100" to="120" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.2" to="0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -113,7 +113,7 @@ export default function AnalyticsReportingPage() {
         {/* Dashboard Preview */}
         <div className="relative h-[500px] mb-20 rounded-lg overflow-hidden shadow-xl">
           <Image
-            src="/services/analytics-dashboard.svg"
+            src="/services/analytics-dashboard-new.svg"
             alt="Analytics Dashboard"
             fill
             className="object-contain"
@@ -187,34 +187,42 @@ export default function AnalyticsReportingPage() {
             Analytics Tools We Use
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <Image
-              src="/tools/google-analytics.svg"
-              alt="Google Analytics"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/data-studio.svg"
-              alt="Google Data Studio"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/search-console.svg"
-              alt="Google Search Console"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/tag-manager.svg"
-              alt="Google Tag Manager"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google_analytics.svg"
+                alt="Google Analytics"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google-search-console.svg"
+                alt="Google Search Console"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/ahrefs.svg"
+                alt="Ahrefs"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/semrush.svg"
+                alt="SEMrush"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>

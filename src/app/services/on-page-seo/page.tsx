@@ -95,7 +95,7 @@ export default function OnPageSEOPage() {
               </h3>
               <div className="relative h-[400px] border rounded-lg overflow-hidden">
                 <Image
-                  src="/services/on-page-seo-example.svg"
+                  src="/services/on-page-seo-example-new.svg"
                   alt="On-Page SEO Example"
                   fill
                   className="object-contain"
@@ -126,7 +126,7 @@ export default function OnPageSEOPage() {
               <h4 className="text-lg font-semibold mb-4 text-red-500">Before Optimization</h4>
               <div className="relative h-[300px]">
                 <Image
-                  src="/services/before-optimization.svg"
+                  src="/services/before-optimization-new.svg"
                   alt="Before On-Page SEO"
                   fill
                   className="object-contain"
@@ -137,7 +137,7 @@ export default function OnPageSEOPage() {
               <h4 className="text-lg font-semibold mb-4 text-green-500">After Optimization</h4>
               <div className="relative h-[300px]">
                 <Image
-                  src="/services/after-optimization.svg"
+                  src="/services/after-optimization-new.svg"
                   alt="After On-Page SEO"
                   fill
                   className="object-contain"

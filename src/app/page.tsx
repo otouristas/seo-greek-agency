@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import PricingCard from '@/components/PricingCard'
+import TestimonialCarousel from '@/components/TestimonialCarousel'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -479,52 +480,50 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
             What Our Clients Say
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
+          <TestimonialCarousel
+            testimonials={[
               {
-                name: 'Sarah Johnson',
-                position: 'Marketing Director',
-                avatar: '/testimonials/avatar1.jpg',
-                content: 'Working with Another SEO Guru has transformed our online presence. Our organic traffic has increased by 200% in just 6 months!'
+                name: 'Fotis K.',
+                position: 'Rent A Car Owner',
+                content: 'The SEO strategy implemented by the team significantly improved our online visibility. We\'ve seen a substantial increase in car rental bookings through our website.'
               },
               {
-                name: 'Michael Chen',
+                name: 'George K.',
+                position: 'Hotel Owner',
+                content: 'Their expertise in local SEO has helped our hotel gain more visibility in travel searches. We\'ve noticed a significant increase in direct bookings through our website.'
+              },
+              {
+                name: 'Klelia A.',
+                position: 'Jewelry Shop Owner',
+                content: 'The team\'s understanding of e-commerce SEO has helped us reach more customers. Our online sales have grown consistently since implementing their recommendations.'
+              },
+              {
+                name: 'Thanos K.',
+                position: 'Car Repair Shop Owner',
+                content: 'Thanks to their local SEO expertise, we\'ve become more visible to customers in our area. The number of service appointments has increased significantly.'
+              },
+              {
+                name: 'Haris G.',
+                position: 'Logistics Website Owner',
+                content: 'The technical SEO improvements made to our logistics website have resulted in better search rankings and increased client inquiries.'
+              },
+              {
+                name: 'Panagiotis S.',
+                position: 'Electrical Engineer',
+                content: 'Their SEO services helped establish my engineering consultancy online. I\'m now getting regular project inquiries through my website.'
+              },
+              {
+                name: 'Antonis L.',
+                position: 'Personal Portfolio Owner',
+                content: 'The team helped optimize my portfolio website, making it more visible to potential clients. I\'ve seen a significant increase in project opportunities.'
+              },
+              {
+                name: 'Afroditi K.',
                 position: 'E-commerce Owner',
-                avatar: '/testimonials/avatar2.jpg',
-                content: 'The team\'s expertise in technical SEO and e-commerce optimization helped us achieve record-breaking sales numbers.'
-              },
-              {
-                name: 'Emma Davis',
-                position: 'Startup Founder',
-                avatar: '/testimonials/avatar3.jpg',
-                content: 'Their strategic approach to content and SEO helped us establish ourselves as industry leaders in a highly competitive market.'
+                content: 'Their comprehensive approach to e-commerce SEO has transformed our online store. Our organic traffic and sales have doubled in just a few months.'
               }
-            ].map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <Image
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    width={60}
-                    height={60}
-                    className="rounded-full"
-                  />
-                  <div>
-                    <div className="font-bold">{testimonial.name}</div>
-                    <div className="text-gray-600">{testimonial.position}</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-4">{testimonial.content}</p>
-                <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+            ]}
+          />
         </div>
       </section>
     </div>

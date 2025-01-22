@@ -92,7 +92,7 @@ export default function TechnicalSEOPage() {
         {/* Technical Audit Visualization */}
         <div className="relative h-[400px] mb-20">
           <Image
-            src="/services/technical-audit-visualization.svg"
+            src="/services/tech-audit-viz.svg"
             alt="Technical SEO Audit"
             fill
             className="object-contain"
@@ -143,40 +143,48 @@ export default function TechnicalSEOPage() {
           </div>
         </div>
 
-        {/* Technical Tools */}
-        <div className="text-center max-w-4xl mx-auto">
+        {/* Tools We Use */}
+        <div className="mt-20 text-center">
           <h3 className="text-2xl font-bold mb-12">
             Professional Tools We Use
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <Image
-              src="/tools/screaming-frog.svg"
-              alt="Screaming Frog"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/gtmetrix.svg"
-              alt="GTmetrix"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/pagespeed-insights.svg"
-              alt="PageSpeed Insights"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/search-console.svg"
-              alt="Google Search Console"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/Screaming Frog.svg"
+                alt="Screaming Frog"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google_analytics.svg"
+                alt="Google Analytics"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google-pagespeed-insights-icon-2021-.svg"
+                alt="PageSpeed Insights"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google-search-console.svg"
+                alt="Google Search Console"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
 

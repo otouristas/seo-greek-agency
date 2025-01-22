@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Google Search Bar -->
+  <rect x="100" y="50" width="600" height="50" rx="25" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="140" y="82" font-family="Arial" font-size="16" fill="#6B7280">restaurants near me</text>
+  <circle cx="650" cy="75" r="15" fill="#3B82F6"/>
+  <text x="650" y="81" font-family="Arial" font-size="16" fill="white" text-anchor="middle">🔍</text>
+
+  <!-- Local Pack -->
+  <rect x="100" y="120" width="600" height="400" rx="8" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Map Section -->
+  <rect x="400" y="140" width="280" height="360" rx="4" fill="#E5E7EB"/>
+  <circle cx="480" cy="250" r="10" fill="#3B82F6"/>
+  <circle cx="540" cy="320" r="10" fill="#3B82F6"/>
+  <circle cx="600" cy="280" r="10" fill="#3B82F6"/>
+  
+  <!-- Business Listings -->
+  <!-- Business 1 -->
+  <rect x="120" y="140" width="260" height="100" rx="4" fill="#F9FAFB"/>
+  <text x="140" y="165" font-family="Arial" font-size="16" font-weight="bold" fill="#111827">Local Business Name</text>
+  <text x="140" y="190" font-family="Arial" font-size="14" fill="#6B7280">⭐⭐⭐⭐⭐ (45 reviews)</text>
+  <text x="140" y="215" font-family="Arial" font-size="14" fill="#6B7280">📍 123 Main St, City</text>
+  
+  <!-- Business 2 -->
+  <rect x="120" y="250" width="260" height="100" rx="4" fill="#F9FAFB"/>
+  <text x="140" y="275" font-family="Arial" font-size="16" font-weight="bold" fill="#111827">Another Local Business</text>
+  <text x="140" y="300" font-family="Arial" font-size="14" fill="#6B7280">⭐⭐⭐⭐½ (32 reviews)</text>
+  <text x="140" y="325" font-family="Arial" font-size="14" fill="#6B7280">📍 456 Oak Ave, City</text>
+  
+  <!-- Business 3 -->
+  <rect x="120" y="360" width="260" height="100" rx="4" fill="#F9FAFB"/>
+  <text x="140" y="385" font-family="Arial" font-size="16" font-weight="bold" fill="#111827">Third Local Business</text>
+  <text x="140" y="410" font-family="Arial" font-size="14" fill="#6B7280">⭐⭐⭐⭐ (28 reviews)</text>
+  <text x="140" y="435" font-family="Arial" font-size="14" fill="#6B7280">📍 789 Pine St, City</text>
+
+  <!-- Local Pack Label -->
+  <rect x="120" y="480" width="180" height="30" rx="15" fill="#3B82F6" opacity="0.1"/>
+  <text x="210" y="500" font-family="Arial" font-size="14" font-weight="bold" fill="#3B82F6" text-anchor="middle">Local Pack Results</text>
+</svg>

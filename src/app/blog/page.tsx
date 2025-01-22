@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import { format } from 'date-fns'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -39,11 +41,11 @@ export default function BlogPage() {
       title: 'The Future of SEO: AI and Machine Learning Impact',
       excerpt: 'Explore how artificial intelligence and machine learning are reshaping the SEO landscape and what it means for your business.',
       slug: 'future-of-seo-ai-machine-learning',
-      date: 'January 15, 2025',
+      date: '2025-01-15',
       author: {
-        name: 'John Smith',
+        name: 'George K.',
         role: 'CEO',
-        image: '/team/john-smith.jpg'
+        image: '/team/george-k.svg'
       },
       category: 'SEO Trends',
       readTime: '8 min read',
@@ -54,11 +56,11 @@ export default function BlogPage() {
       title: 'Core Web Vitals: A Complete Guide',
       excerpt: 'Learn everything you need to know about Core Web Vitals and how they affect your website\'s SEO performance.',
       slug: 'core-web-vitals-guide',
-      date: 'January 10, 2025',
+      date: '2025-01-10',
       author: {
-        name: 'Emma Davis',
-        role: 'Technical SEO Lead',
-        image: '/team/emma-davis.jpg'
+        name: 'George K.',
+        role: 'CEO',
+        image: '/team/george-k.svg'
       },
       category: 'Technical SEO',
       readTime: '12 min read',
@@ -69,11 +71,11 @@ export default function BlogPage() {
       title: 'Local SEO Strategies for 2025',
       excerpt: 'Discover the latest local SEO strategies that will help your business dominate local search results.',
       slug: 'local-seo-strategies-2025',
-      date: 'January 5, 2025',
+      date: '2025-01-05',
       author: {
-        name: 'Sarah Johnson',
-        role: 'Head of SEO Strategy',
-        image: '/team/sarah-johnson.jpg'
+        name: 'George K.',
+        role: 'CEO',
+        image: '/team/george-k.svg'
       },
       category: 'Local SEO',
       readTime: '10 min read',
@@ -83,11 +85,11 @@ export default function BlogPage() {
       title: 'Content Optimization Tips for E-commerce',
       excerpt: 'Learn how to optimize your e-commerce content for better rankings and increased sales.',
       slug: 'content-optimization-ecommerce',
-      date: 'December 28, 2024',
+      date: '2024-12-28',
       author: {
-        name: 'Michael Chen',
-        role: 'Content Strategy Director',
-        image: '/team/michael-chen.jpg'
+        name: 'George K.',
+        role: 'CEO',
+        image: '/team/george-k.svg'
       },
       category: 'E-commerce',
       readTime: '15 min read',
@@ -97,11 +99,11 @@ export default function BlogPage() {
       title: 'Link Building Strategies That Actually Work',
       excerpt: 'Discover effective link building strategies that can help improve your website\'s authority and rankings.',
       slug: 'effective-link-building-strategies',
-      date: 'December 20, 2024',
+      date: '2024-12-20',
       author: {
-        name: 'Sarah Johnson',
-        role: 'Head of SEO Strategy',
-        image: '/team/sarah-johnson.jpg'
+        name: 'George K.',
+        role: 'CEO',
+        image: '/team/george-k.svg'
       },
       category: 'Link Building',
       readTime: '11 min read',

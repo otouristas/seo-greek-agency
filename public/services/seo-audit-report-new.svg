@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Report Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="720" height="80" rx="8" fill="white" stroke="#E5E7EB"/>
+  <text x="80" y="85" font-family="Arial" font-size="24" fill="#111827" font-weight="bold">SEO Audit Report</text>
+  <text x="80" y="105" font-family="Arial" font-size="14" fill="#6B7280">Generated on January 22, 2025</text>
+
+  <!-- Executive Summary -->
+  <g transform="translate(40,140)">
+    <rect width="720" height="120" rx="8" fill="white" stroke="#E5E7EB"/>
+    <text x="20" y="30" font-family="Arial" font-size="18" fill="#374151" font-weight="bold">Executive Summary</text>
+    <rect x="20" y="45" width="680" height="2" fill="#E5E7EB"/>
+    <text x="20" y="70" font-family="Arial" font-size="14" fill="#4B5563">Overall SEO Health Score:</text>
+    <rect x="180" y="58" width="200" height="16" rx="8" fill="#EFF6FF"/>
+    <rect x="180" y="58" width="140" height="16" rx="8" fill="#3B82F6"/>
+    <text x="390" y="70" font-family="Arial" font-size="12" fill="#1E40AF">72/100</text>
+  </g>
+
+  <!-- Key Metrics -->
+  <g transform="translate(40,280)">
+    <rect width="350" height="280" rx="8" fill="white" stroke="#E5E7EB"/>
+    <text x="20" y="30" font-family="Arial" font-size="18" fill="#374151" font-weight="bold">Key Metrics</text>
+    <rect x="20" y="45" width="310" height="2" fill="#E5E7EB"/>
+    
+    <!-- Metric Items -->
+    <g transform="translate(20,60)">
+      <!-- Mobile Score -->
+      <rect width="310" height="40" rx="4" fill="#F3F4F6"/>
+      <text x="10" y="25" font-family="Arial" font-size="14" fill="#374151">Mobile Score</text>
+      <text x="290" y="25" font-family="Arial" font-size="14" fill="#059669" text-anchor="end">85/100</text>
+
+      <!-- Page Speed -->
+      <g transform="translate(0,50)">
+        <rect width="310" height="40" rx="4" fill="#F3F4F6"/>
+        <text x="10" y="25" font-family="Arial" font-size="14" fill="#374151">Page Speed</text>
+        <text x="290" y="25" font-family="Arial" font-size="14" fill="#DC2626" text-anchor="end">2.8s</text>
+      </g>
+
+      <!-- Indexed Pages -->
+      <g transform="translate(0,100)">
+        <rect width="310" height="40" rx="4" fill="#F3F4F6"/>
+        <text x="10" y="25" font-family="Arial" font-size="14" fill="#374151">Indexed Pages</text>
+        <text x="290" y="25" font-family="Arial" font-size="14" fill="#374151" text-anchor="end">245</text>
+      </g>
+
+      <!-- Backlinks -->
+      <g transform="translate(0,150)">
+        <rect width="310" height="40" rx="4" fill="#F3F4F6"/>
+        <text x="10" y="25" font-family="Arial" font-size="14" fill="#374151">Backlinks</text>
+        <text x="290" y="25" font-family="Arial" font-size="14" fill="#374151" text-anchor="end">1,280</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Issues Summary -->
+  <g transform="translate(410,280)">
+    <rect width="350" height="280" rx="8" fill="white" stroke="#E5E7EB"/>
+    <text x="20" y="30" font-family="Arial" font-size="18" fill="#374151" font-weight="bold">Issues Found</text>
+    <rect x="20" y="45" width="310" height="2" fill="#E5E7EB"/>
+
+    <!-- Issues Chart -->
+    <g transform="translate(20,70)">
+      <!-- Critical -->
+      <rect width="310" height="30" rx="4" fill="#FEE2E2"/>
+      <rect width="93" height="30" rx="4" fill="#DC2626"/>
+      <text x="10" y="20" font-family="Arial" font-size="12" fill="white">Critical</text>
+      <text x="290" y="20" font-family="Arial" font-size="12" fill="#DC2626" text-anchor="end">12</text>
+
+      <!-- High -->
+      <g transform="translate(0,40)">
+        <rect width="310" height="30" rx="4" fill="#FEF3C7"/>
+        <rect width="155" height="30" rx="4" fill="#F59E0B"/>
+        <text x="10" y="20" font-family="Arial" font-size="12" fill="white">High</text>
+        <text x="290" y="20" font-family="Arial" font-size="12" fill="#B45309" text-anchor="end">28</text>
+      </g>
+
+      <!-- Medium -->
+      <g transform="translate(0,80)">
+        <rect width="310" height="30" rx="4" fill="#E0E7FF"/>
+        <rect width="217" height="30" rx="4" fill="#6366F1"/>
+        <text x="10" y="20" font-family="Arial" font-size="12" fill="white">Medium</text>
+        <text x="290" y="20" font-family="Arial" font-size="12" fill="#4338CA" text-anchor="end">45</text>
+      </g>
+
+      <!-- Low -->
+      <g transform="translate(0,120)">
+        <rect width="310" height="30" rx="4" fill="#ECFDF5"/>
+        <rect width="279" height="30" rx="4" fill="#10B981"/>
+        <text x="10" y="20" font-family="Arial" font-size="12" fill="white">Low</text>
+        <text x="290" y="20" font-family="Arial" font-size="12" fill="#047857" text-anchor="end">67</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dashboard Background -->
+  <rect width="800" height="500" fill="#F9FAFB"/>
+  
+  <!-- Header -->
+  <rect x="20" y="20" width="760" height="60" rx="8" fill="white" stroke="#E5E7EB"/>
+  <text x="40" y="55" font-family="Arial" font-size="18" fill="#111827">SEO Performance Dashboard</text>
+  
+  <!-- Date Range Selector -->
+  <rect x="560" y="35" width="200" height="30" rx="4" fill="#F3F4F6"/>
+  <text x="580" y="55" font-family="Arial" font-size="14" fill="#6B7280">Last 30 Days ▼</text>
+
+  <!-- Main Grid -->
+  <g transform="translate(20,100)">
+    <!-- Traffic Overview -->
+    <rect width="370" height="180" rx="8" fill="white" stroke="#E5E7EB"/>
+    <text x="20" y="30" font-family="Arial" font-size="16" fill="#374151" font-weight="bold">Organic Traffic</text>
+    <!-- Graph -->
+    <g transform="translate(20,50)">
+      <path d="M0 100 L50 80 L100 90 L150 60 L200 40 L250 30 L300 20" 
+            stroke="#3B82F6" 
+            stroke-width="2"
+            fill="none"/>
+      <path d="M0 100 L300 100" stroke="#E5E7EB" stroke-width="1"/>
+      <!-- Data Points -->
+      <circle cx="0" cy="100" r="3" fill="#3B82F6"/>
+      <circle cx="50" cy="80" r="3" fill="#3B82F6"/>
+      <circle cx="100" cy="90" r="3" fill="#3B82F6"/>
+      <circle cx="150" cy="60" r="3" fill="#3B82F6"/>
+      <circle cx="200" cy="40" r="3" fill="#3B82F6"/>
+      <circle cx="250" cy="30" r="3" fill="#3B82F6"/>
+      <circle cx="300" cy="20" r="3" fill="#3B82F6"/>
+    </g>
+    <text x="20" y="160" font-family="Arial" font-size="14" fill="#059669">+45% vs. Previous Period</text>
+
+    <!-- Rankings Distribution -->
+    <g transform="translate(390,0)">
+      <rect width="370" height="180" rx="8" fill="white" stroke="#E5E7EB"/>
+      <text x="20" y="30" font-family="Arial" font-size="16" fill="#374151" font-weight="bold">Keyword Rankings</text>
+      <!-- Bar Chart -->
+      <g transform="translate(20,50)">
+        <rect width="60" height="100" fill="#DBEAFE"/>
+        <rect width="60" height="30" fill="#3B82F6"/>
+        <text x="30" y="120" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">1-3</text>
+        
+        <rect x="70" width="60" height="100" fill="#DBEAFE"/>
+        <rect x="70" width="60" height="45" fill="#3B82F6"/>
+        <text x="100" y="120" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">4-10</text>
+        
+        <rect x="140" width="60" height="100" fill="#DBEAFE"/>
+        <rect x="140" width="60" height="60" fill="#3B82F6"/>
+        <text x="170" y="120" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">11-20</text>
+        
+        <rect x="210" width="60" height="100" fill="#DBEAFE"/>
+        <rect x="210" width="60" height="80" fill="#3B82F6"/>
+        <text x="240" y="120" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">21-50</text>
+      </g>
+    </g>
+
+    <!-- Conversion Metrics -->
+    <g transform="translate(0,200)">
+      <rect width="370" height="180" rx="8" fill="white" stroke="#E5E7EB"/>
+      <text x="20" y="30" font-family="Arial" font-size="16" fill="#374151" font-weight="bold">Conversions</text>
+      <!-- Donut Chart -->
+      <circle cx="100" cy="100" r="60" fill="#DBEAFE"/>
+      <path d="M100 100 L100 40 A60 60 0 1 1 40 100 Z" fill="#3B82F6"/>
+      <text x="100" y="95" font-family="Arial" font-size="24" fill="#111827" text-anchor="middle">4.8%</text>
+      <text x="100" y="115" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">Conversion Rate</text>
+      <!-- Legend -->
+      <g transform="translate(180,70)">
+        <circle cx="10" cy="10" r="5" fill="#3B82F6"/>
+        <text x="25" y="14" font-family="Arial" font-size="12" fill="#374151">Converted</text>
+        <circle cx="10" cy="30" r="5" fill="#DBEAFE"/>
+        <text x="25" y="34" font-family="Arial" font-size="12" fill="#374151">Not Converted</text>
+      </g>
+    </g>
+
+    <!-- Page Performance -->
+    <g transform="translate(390,200)">
+      <rect width="370" height="180" rx="8" fill="white" stroke="#E5E7EB"/>
+      <text x="20" y="30" font-family="Arial" font-size="16" fill="#374151" font-weight="bold">Top Pages</text>
+      <!-- Table -->
+      <g transform="translate(20,50)">
+        <text x="0" y="20" font-family="Arial" font-size="12" fill="#6B7280">Page</text>
+        <text x="200" y="20" font-family="Arial" font-size="12" fill="#6B7280">Traffic</text>
+        <text x="300" y="20" font-family="Arial" font-size="12" fill="#6B7280">Conv.</text>
+        
+        <text x="0" y="45" font-family="Arial" font-size="12" fill="#374151">/homepage</text>
+        <text x="200" y="45" font-family="Arial" font-size="12" fill="#374151">5,234</text>
+        <text x="300" y="45" font-family="Arial" font-size="12" fill="#059669">6.2%</text>
+        
+        <text x="0" y="70" font-family="Arial" font-size="12" fill="#374151">/products</text>
+        <text x="200" y="70" font-family="Arial" font-size="12" fill="#374151">3,421</text>
+        <text x="300" y="70" font-family="Arial" font-size="12" fill="#059669">4.8%</text>
+        
+        <text x="0" y="95" font-family="Arial" font-size="12" fill="#374151">/blog</text>
+        <text x="200" y="95" font-family="Arial" font-size="12" fill="#374151">2,845</text>
+        <text x="300" y="95" font-family="Arial" font-size="12" fill="#059669">3.5%</text>
+      </g>
+    </g>
+  </g>
+</svg>

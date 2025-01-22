@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Calendar Header -->
+  <rect x="50" y="50" width="700" height="50" rx="8" fill="#3B82F6"/>
+  <text x="400" y="82" font-family="Arial" font-size="20" fill="white" text-anchor="middle">Content Calendar</text>
+
+  <!-- Week Days -->
+  <g transform="translate(50,110)">
+    <rect width="100" height="30" fill="#F3F4F6"/>
+    <text x="50" y="20" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle">Monday</text>
+    <rect x="100" width="100" height="30" fill="#F3F4F6"/>
+    <text x="150" y="20" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle">Tuesday</text>
+    <rect x="200" width="100" height="30" fill="#F3F4F6"/>
+    <text x="250" y="20" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle">Wednesday</text>
+    <rect x="300" width="100" height="30" fill="#F3F4F6"/>
+    <text x="350" y="20" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle">Thursday</text>
+    <rect x="400" width="100" height="30" fill="#F3F4F6"/>
+    <text x="450" y="20" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle">Friday</text>
+    <rect x="500" width="100" height="30" fill="#F3F4F6"/>
+    <text x="550" y="20" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle">Saturday</text>
+    <rect x="600" width="100" height="30" fill="#F3F4F6"/>
+    <text x="650" y="20" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle">Sunday</text>
+  </g>
+
+  <!-- Calendar Grid -->
+  <g transform="translate(50,140)">
+    <!-- Week 1 -->
+    <g>
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+      <rect x="10" y="10" width="80" height="60" rx="4" fill="#BFDBFE"/>
+      <text x="50" y="35" font-family="Arial" font-size="10" fill="#1D4ED8" text-anchor="middle">Blog Post</text>
+      <text x="50" y="50" font-family="Arial" font-size="8" fill="#1D4ED8" text-anchor="middle">SEO Tips</text>
+    </g>
+    <g transform="translate(100,0)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+    <g transform="translate(200,0)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+      <rect x="10" y="10" width="80" height="60" rx="4" fill="#C7D2FE"/>
+      <text x="50" y="35" font-family="Arial" font-size="10" fill="#3730A3" text-anchor="middle">Case Study</text>
+      <text x="50" y="50" font-family="Arial" font-size="8" fill="#3730A3" text-anchor="middle">Client Success</text>
+    </g>
+    <g transform="translate(300,0)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+    <g transform="translate(400,0)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+      <rect x="10" y="10" width="80" height="60" rx="4" fill="#BBF7D0"/>
+      <text x="50" y="35" font-family="Arial" font-size="10" fill="#166534" text-anchor="middle">Newsletter</text>
+      <text x="50" y="50" font-family="Arial" font-size="8" fill="#166534" text-anchor="middle">Weekly Update</text>
+    </g>
+    <g transform="translate(500,0)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+    <g transform="translate(600,0)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+
+    <!-- Week 2 -->
+    <g transform="translate(0,80)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+    <g transform="translate(100,80)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+      <rect x="10" y="10" width="80" height="60" rx="4" fill="#BFDBFE"/>
+      <text x="50" y="35" font-family="Arial" font-size="10" fill="#1D4ED8" text-anchor="middle">Infographic</text>
+      <text x="50" y="50" font-family="Arial" font-size="8" fill="#1D4ED8" text-anchor="middle">Data Viz</text>
+    </g>
+    <g transform="translate(200,80)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+    <g transform="translate(300,80)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+      <rect x="10" y="10" width="80" height="60" rx="4" fill="#C7D2FE"/>
+      <text x="50" y="35" font-family="Arial" font-size="10" fill="#3730A3" text-anchor="middle">Video</text>
+      <text x="50" y="50" font-family="Arial" font-size="8" fill="#3730A3" text-anchor="middle">How-to Guide</text>
+    </g>
+    <g transform="translate(400,80)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+    <g transform="translate(500,80)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+    <g transform="translate(600,80)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+
+    <!-- Week 3 -->
+    <g transform="translate(0,160)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+      <rect x="10" y="10" width="80" height="60" rx="4" fill="#BBF7D0"/>
+      <text x="50" y="35" font-family="Arial" font-size="10" fill="#166534" text-anchor="middle">Blog Post</text>
+      <text x="50" y="50" font-family="Arial" font-size="8" fill="#166534" text-anchor="middle">Industry News</text>
+    </g>
+    <g transform="translate(100,160)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+    <g transform="translate(200,160)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+      <rect x="10" y="10" width="80" height="60" rx="4" fill="#BFDBFE"/>
+      <text x="50" y="35" font-family="Arial" font-size="10" fill="#1D4ED8" text-anchor="middle">Whitepaper</text>
+      <text x="50" y="50" font-family="Arial" font-size="8" fill="#1D4ED8" text-anchor="middle">Research</text>
+    </g>
+    <g transform="translate(300,160)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+    <g transform="translate(400,160)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+      <rect x="10" y="10" width="80" height="60" rx="4" fill="#C7D2FE"/>
+      <text x="50" y="35" font-family="Arial" font-size="10" fill="#3730A3" text-anchor="middle">Newsletter</text>
+      <text x="50" y="50" font-family="Arial" font-size="8" fill="#3730A3" text-anchor="middle">Weekly Update</text>
+    </g>
+    <g transform="translate(500,160)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+    <g transform="translate(600,160)">
+      <rect width="100" height="80" fill="white" stroke="#E5E7EB"/>
+    </g>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(50,390)">
+    <rect width="15" height="15" rx="2" fill="#BFDBFE"/>
+    <text x="25" y="12" font-family="Arial" font-size="12" fill="#1D4ED8">Blog & Articles</text>
+    
+    <rect x="120" width="15" height="15" rx="2" fill="#C7D2FE"/>
+    <text x="145" y="12" font-family="Arial" font-size="12" fill="#3730A3">Rich Media</text>
+    
+    <rect x="240" width="15" height="15" rx="2" fill="#BBF7D0"/>
+    <text x="265" y="12" font-family="Arial" font-size="12" fill="#166534">Newsletters</text>
+  </g>
+</svg>

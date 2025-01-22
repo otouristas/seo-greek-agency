@@ -128,56 +128,69 @@ export default function LocalSEOPage() {
           </div>
         </div>
 
-        {/* Local Presence Management */}
-        <div className="text-center max-w-4xl mx-auto">
+        {/* Local Directories */}
+        <div className="mt-20 text-center">
           <h3 className="text-2xl font-bold mb-12">
             Your Business Across Local Directories
           </h3>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
-            <Image
-              src="/platforms/google-business.svg"
-              alt="Google Business"
-              width={100}
-              height={40}
-              className="mx-auto"
-            />
-            <Image
-              src="/platforms/yelp.svg"
-              alt="Yelp"
-              width={100}
-              height={40}
-              className="mx-auto"
-            />
-            <Image
-              src="/platforms/facebook.svg"
-              alt="Facebook"
-              width={100}
-              height={40}
-              className="mx-auto"
-            />
-            <Image
-              src="/platforms/bing-places.svg"
-              alt="Bing Places"
-              width={100}
-              height={40}
-              className="mx-auto"
-            />
-            <Image
-              src="/platforms/yellow-pages.svg"
-              alt="Yellow Pages"
-              width={100}
-              height={40}
-              className="mx-auto"
-            />
-            <Image
-              src="/platforms/foursquare.svg"
-              alt="Foursquare"
-              width={100}
-              height={40}
-              className="mx-auto"
-            />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google-my-business-logo.svg"
+                alt="Google My Business"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/yelp-svgrepo-com.svg"
+                alt="Yelp"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/icons8-facebook.svg"
+                alt="Facebook"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google.svg"
+                alt="Bing"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/icons8-telegram.svg"
+                alt="Telegram"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/icons8-maps.svg"
+                alt="Google Maps"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   )

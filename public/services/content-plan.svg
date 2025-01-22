@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Calendar Container -->
+  <rect x="50" y="50" width="700" height="300" rx="8" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="50" rx="8" fill="#3B82F6"/>
+  <text x="400" y="82" font-family="Arial" font-size="20" fill="white" text-anchor="middle">Monthly Content Plan</text>
+
+  <!-- Content Items -->
+  <!-- Week 1 -->
+  <g transform="translate(70,120)">
+    <rect width="200" height="60" rx="4" fill="#BFDBFE"/>
+    <text x="100" y="30" font-family="Arial" font-size="14" fill="#1D4ED8" text-anchor="middle">Blog Post</text>
+    <text x="100" y="45" font-family="Arial" font-size="12" fill="#1D4ED8" text-anchor="middle">Week 1</text>
+  </g>
+
+  <!-- Week 2 -->
+  <g transform="translate(300,120)">
+    <rect width="200" height="60" rx="4" fill="#C7D2FE"/>
+    <text x="100" y="30" font-family="Arial" font-size="14" fill="#3730A3" text-anchor="middle">Case Study</text>
+    <text x="100" y="45" font-family="Arial" font-size="12" fill="#3730A3" text-anchor="middle">Week 2</text>
+  </g>
+
+  <!-- Week 3 -->
+  <g transform="translate(530,120)">
+    <rect width="200" height="60" rx="4" fill="#BBF7D0"/>
+    <text x="100" y="30" font-family="Arial" font-size="14" fill="#166534" text-anchor="middle">Newsletter</text>
+    <text x="100" y="45" font-family="Arial" font-size="12" fill="#166534" text-anchor="middle">Week 3</text>
+  </g>
+
+  <!-- Week 4 -->
+  <g transform="translate(70,200)">
+    <rect width="200" height="60" rx="4" fill="#FDE68A"/>
+    <text x="100" y="30" font-family="Arial" font-size="14" fill="#92400E" text-anchor="middle">Infographic</text>
+    <text x="100" y="45" font-family="Arial" font-size="12" fill="#92400E" text-anchor="middle">Week 4</text>
+  </g>
+
+  <!-- Week 5 -->
+  <g transform="translate(300,200)">
+    <rect width="200" height="60" rx="4" fill="#DDD6FE"/>
+    <text x="100" y="30" font-family="Arial" font-size="14" fill="#5B21B6" text-anchor="middle">Video Content</text>
+    <text x="100" y="45" font-family="Arial" font-size="12" fill="#5B21B6" text-anchor="middle">Week 5</text>
+  </g>
+
+  <!-- Week 6 -->
+  <g transform="translate(530,200)">
+    <rect width="200" height="60" rx="4" fill="#FECACA"/>
+    <text x="100" y="30" font-family="Arial" font-size="14" fill="#991B1B" text-anchor="middle">Social Media</text>
+    <text x="100" y="45" font-family="Arial" font-size="12" fill="#991B1B" text-anchor="middle">Week 6</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(70,290)">
+    <text x="0" y="30" font-family="Arial" font-size="12" fill="#4B5563">Content Types:</text>
+    <circle cx="100" cy="25" r="6" fill="#BFDBFE"/>
+    <text x="120" y="30" font-family="Arial" font-size="12" fill="#4B5563">Blog</text>
+    <circle cx="200" cy="25" r="6" fill="#C7D2FE"/>
+    <text x="220" y="30" font-family="Arial" font-size="12" fill="#4B5563">Case Study</text>
+    <circle cx="300" cy="25" r="6" fill="#BBF7D0"/>
+    <text x="320" y="30" font-family="Arial" font-size="12" fill="#4B5563">Newsletter</text>
+  </g>
+</svg>

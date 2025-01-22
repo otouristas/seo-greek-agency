@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Browser Window Frame -->
+  <rect x="50" y="50" width="700" height="500" rx="8" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <rect x="50" y="50" width="700" height="40" rx="8" fill="#F3F4F6"/>
+  <circle cx="90" cy="70" r="6" fill="#EF4444"/>
+  <circle cx="120" cy="70" r="6" fill="#F59E0B"/>
+  <circle cx="150" cy="70" r="6" fill="#10B981"/>
+
+  <!-- URL Bar -->
+  <rect x="80" y="100" width="640" height="30" rx="4" fill="#F3F4F6"/>
+  <text x="100" y="120" font-family="Arial" font-size="12" fill="#6B7280">https://example.com/optimized-page</text>
+
+  <!-- Content Area -->
+  <!-- Title -->
+  <text x="100" y="180" font-family="Arial" font-size="24" font-weight="bold" fill="#111827">Optimized Page Title</text>
+  
+  <!-- Meta Description -->
+  <rect x="100" y="200" width="500" height="40" rx="4" fill="#F3F4F6"/>
+  <text x="110" y="225" font-family="Arial" font-size="12" fill="#6B7280">Optimized meta description with keywords...</text>
+
+  <!-- Content Structure -->
+  <rect x="100" y="260" width="200" height="20" rx="2" fill="#E5E7EB"/>
+  <rect x="100" y="290" width="500" height="10" rx="2" fill="#E5E7EB"/>
+  <rect x="100" y="310" width="480" height="10" rx="2" fill="#E5E7EB"/>
+  <rect x="100" y="330" width="460" height="10" rx="2" fill="#E5E7EB"/>
+
+  <!-- Image with Alt Text -->
+  <rect x="100" y="360" width="200" height="120" rx="4" fill="#BFDBFE"/>
+  <text x="160" y="425" font-family="Arial" font-size="12" fill="#3B82F6">Optimized Image</text>
+  <text x="140" y="445" font-family="Arial" font-size="10" fill="#6B7280">alt="descriptive alt text"</text>
+
+  <!-- Header Tags -->
+  <rect x="320" y="360" width="300" height="120" rx="4" fill="#F3F4F6"/>
+  <text x="340" y="385" font-family="Arial" font-size="14" font-weight="bold" fill="#111827">H1: Main Heading</text>
+  <text x="340" y="415" font-family="Arial" font-size="12" font-weight="bold" fill="#374151">H2: Subheading</text>
+  <text x="340" y="445" font-family="Arial" font-size="10" font-weight="bold" fill="#4B5563">H3: Section Title</text>
+
+  <!-- SEO Elements Callouts -->
+  <circle cx="200" cy="180" r="5" fill="#3B82F6"/>
+  <line x1="200" y1="180" x2="650" y2="180" stroke="#3B82F6" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="660" y="185" font-family="Arial" font-size="12" fill="#3B82F6">Title Tag</text>
+
+  <circle cx="150" cy="220" r="5" fill="#3B82F6"/>
+  <line x1="150" y1="220" x2="650" y2="220" stroke="#3B82F6" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="660" y="225" font-family="Arial" font-size="12" fill="#3B82F6">Meta Description</text>
+
+  <!-- Internal Links -->
+  <rect x="100" y="500" width="100" height="20" rx="4" fill="#BFDBFE"/>
+  <rect x="220" y="500" width="100" height="20" rx="4" fill="#BFDBFE"/>
+  <rect x="340" y="500" width="100" height="20" rx="4" fill="#BFDBFE"/>
+</svg>

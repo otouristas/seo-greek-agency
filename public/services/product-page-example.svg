@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Product Page Container -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="720" height="60" rx="8" fill="white" stroke="#E5E7EB"/>
+  <text x="60" y="77" font-family="Arial" font-size="20" fill="#111827">Product Name</text>
+  <text x="660" y="77" font-family="Arial" font-size="20" fill="#059669">$99.99</text>
+
+  <!-- Product Image -->
+  <rect x="40" y="120" width="360" height="360" rx="8" fill="white" stroke="#E5E7EB"/>
+  <rect x="60" y="140" width="320" height="320" rx="4" fill="#F3F4F6"/>
+  <path d="M220 240 L260 280 L300 220" stroke="#9CA3AF" stroke-width="4"/>
+  <text x="200" y="340" font-family="Arial" font-size="14" fill="#6B7280" text-anchor="middle">Product Image</text>
+
+  <!-- Product Details -->
+  <rect x="420" y="120" width="340" height="360" rx="8" fill="white" stroke="#E5E7EB"/>
+  
+  <!-- Star Rating -->
+  <g transform="translate(440,140)">
+    <!-- 5 Stars -->
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" transform="scale(0.8)" fill="#FCD34D"/>
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" transform="translate(25,0) scale(0.8)" fill="#FCD34D"/>
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" transform="translate(50,0) scale(0.8)" fill="#FCD34D"/>
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" transform="translate(75,0) scale(0.8)" fill="#FCD34D"/>
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" transform="translate(100,0) scale(0.8)" fill="#FCD34D"/>
+    <text x="140" y="15" font-family="Arial" font-size="14" fill="#4B5563">(128 reviews)</text>
+  </g>
+
+  <!-- Product Description -->
+  <text x="440" y="200" font-family="Arial" font-size="16" fill="#374151">Product Description</text>
+  <rect x="440" y="220" width="300" height="2" fill="#E5E7EB"/>
+  
+  <!-- Description Lines -->
+  <rect x="440" y="240" width="280" height="8" rx="4" fill="#E5E7EB"/>
+  <rect x="440" y="260" width="260" height="8" rx="4" fill="#E5E7EB"/>
+  <rect x="440" y="280" width="270" height="8" rx="4" fill="#E5E7EB"/>
+
+  <!-- Product Features -->
+  <text x="440" y="320" font-family="Arial" font-size="16" fill="#374151">Key Features</text>
+  <rect x="440" y="340" width="300" height="2" fill="#E5E7EB"/>
+  
+  <!-- Feature Items -->
+  <g transform="translate(440,360)">
+    <circle cx="6" cy="6" r="3" fill="#059669"/>
+    <text x="20" y="10" font-family="Arial" font-size="14" fill="#4B5563">Feature 1</text>
+  </g>
+  <g transform="translate(440,390)">
+    <circle cx="6" cy="6" r="3" fill="#059669"/>
+    <text x="20" y="10" font-family="Arial" font-size="14" fill="#4B5563">Feature 2</text>
+  </g>
+  <g transform="translate(440,420)">
+    <circle cx="6" cy="6" r="3" fill="#059669"/>
+    <text x="20" y="10" font-family="Arial" font-size="14" fill="#4B5563">Feature 3</text>
+  </g>
+
+  <!-- Add to Cart Button -->
+  <rect x="40" y="500" width="720" height="60" rx="8" fill="#059669"/>
+  <text x="400" y="538" font-family="Arial" font-size="18" fill="white" text-anchor="middle">Add to Cart</text>
+
+  <!-- SEO Elements Callouts -->
+  <g transform="translate(40,580)">
+    <text x="0" y="0" font-family="Arial" font-size="12" fill="#6B7280">✓ Optimized Title</text>
+    <text x="150" y="0" font-family="Arial" font-size="12" fill="#6B7280">✓ Rich Schema</text>
+    <text x="300" y="0" font-family="Arial" font-size="12" fill="#6B7280">✓ Alt Tags</text>
+    <text x="450" y="0" font-family="Arial" font-size="12" fill="#6B7280">✓ Meta Description</text>
+  </g>
+</svg>

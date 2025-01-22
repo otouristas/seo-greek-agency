@@ -72,7 +72,7 @@ export default function OffPageSEOPage() {
         {/* Link Building Process Visualization */}
         <div className="relative h-[400px] mb-20">
           <Image
-            src="/services/link-building-process.svg"
+            src="/services/link-process.svg"
             alt="Link Building Process"
             fill
             className="object-contain"
@@ -115,7 +115,7 @@ export default function OffPageSEOPage() {
             </div>
             <div className="relative h-[400px]">
               <Image
-                src="/services/backlinks-graph.svg"
+                src="/services/backlinks-graph-new.svg"
                 alt="Backlinks Growth Graph"
                 fill
                 className="object-contain"

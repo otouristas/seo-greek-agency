@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Browser Window Frame -->
+  <rect x="50" y="50" width="700" height="500" rx="8" fill="white" stroke="#EF4444" stroke-width="2"/>
+  <rect x="50" y="50" width="700" height="40" rx="8" fill="#FEE2E2"/>
+  <circle cx="90" cy="70" r="6" fill="#EF4444"/>
+  <circle cx="120" cy="70" r="6" fill="#F59E0B"/>
+  <circle cx="150" cy="70" r="6" fill="#10B981"/>
+
+  <!-- URL Bar -->
+  <rect x="80" y="100" width="640" height="30" rx="4" fill="#FEE2E2"/>
+  <text x="100" y="120" font-family="Arial" font-size="12" fill="#EF4444">https://example.com/page1.html?id=123</text>
+
+  <!-- Content Area -->
+  <!-- Poor Title -->
+  <text x="100" y="180" font-family="Arial" font-size="24" fill="#EF4444">Home Page</text>
+  
+  <!-- Missing Meta Description -->
+  <rect x="100" y="200" width="500" height="40" rx="4" fill="#FEE2E2"/>
+  <text x="110" y="225" font-family="Arial" font-size="12" fill="#EF4444">No meta description...</text>
+
+  <!-- Poor Content Structure -->
+  <rect x="100" y="260" width="600" height="10" rx="2" fill="#FEE2E2"/>
+  <rect x="100" y="280" width="600" height="10" rx="2" fill="#FEE2E2"/>
+  <rect x="100" y="300" width="600" height="10" rx="2" fill="#FEE2E2"/>
+  <rect x="100" y="320" width="600" height="10" rx="2" fill="#FEE2E2"/>
+
+  <!-- Image without Alt Text -->
+  <rect x="100" y="360" width="200" height="120" rx="4" fill="#FEE2E2"/>
+  <text x="160" y="425" font-family="Arial" font-size="12" fill="#EF4444">IMG_001.jpg</text>
+  <text x="140" y="445" font-family="Arial" font-size="10" fill="#EF4444">alt="image1"</text>
+
+  <!-- Missing Header Structure -->
+  <rect x="320" y="360" width="300" height="120" rx="4" fill="#FEE2E2"/>
+  <text x="340" y="385" font-family="Arial" font-size="14" fill="#EF4444">Welcome to our website</text>
+  <text x="340" y="415" font-family="Arial" font-size="12" fill="#EF4444">Click here to learn more</text>
+  <text x="340" y="445" font-family="Arial" font-size="10" fill="#EF4444">Read more about us</text>
+
+  <!-- SEO Issues Callouts -->
+  <circle cx="200" cy="180" r="5" fill="#EF4444"/>
+  <line x1="200" y1="180" x2="650" y2="180" stroke="#EF4444" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="660" y="185" font-family="Arial" font-size="12" fill="#EF4444">Poor Title</text>
+
+  <circle cx="150" y1="220" r="5" fill="#EF4444"/>
+  <line x1="150" y1="220" x2="650" y2="220" stroke="#EF4444" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="660" y="225" font-family="Arial" font-size="12" fill="#EF4444">No Meta Description</text>
+
+  <!-- No Internal Links -->
+  <rect x="100" y="500" width="600" height="20" rx="4" fill="#FEE2E2"/>
+  <text x="360" y="514" font-family="Arial" font-size="12" fill="#EF4444" text-anchor="middle">No Internal Links</text>
+</svg>

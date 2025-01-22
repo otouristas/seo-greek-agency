@@ -20,28 +20,28 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const teamMembers = [
     {
-      name: 'John Smith',
-      role: 'CEO & Founder',
-      image: '/team/john-smith.jpg',
-      bio: '15+ years of SEO experience, previously led SEO at major tech companies'
+      name: 'George K.',
+      role: 'Founder and SEO Strategist',
+      image: '/team/george-k.svg',
+      bio: 'With 10 years of experience making websites / ecommerce websites and Led SEO at major companies around the world.'
     },
     {
-      name: 'Sarah Johnson',
-      role: 'Head of SEO Strategy',
-      image: '/team/sarah-johnson.jpg',
-      bio: 'Expert in technical SEO and data analytics with 10+ years experience'
+      name: 'Smaragda F.',
+      role: 'CFO',
+      image: '/team/smaragda-f.svg',
+      bio: 'Leading our financial strategy and operations with expertise in business growth and sustainability.'
     },
     {
-      name: 'Michael Chen',
-      role: 'Content Strategy Director',
-      image: '/team/michael-chen.jpg',
-      bio: 'Content marketing specialist with a background in digital journalism'
+      name: 'Yannis S.',
+      role: 'Web Developer',
+      image: '/team/yannis-s.svg',
+      bio: 'Expert web developer specializing in creating high-performance, SEO-friendly websites.'
     },
     {
-      name: 'Emma Davis',
-      role: 'Technical SEO Lead',
-      image: '/team/emma-davis.jpg',
-      bio: 'Certified Google Analytics expert with focus on technical optimization'
+      name: 'Peggy K.',
+      role: 'Marketing Specialist',
+      image: '/team/peggy-k.svg',
+      bio: 'Digital marketing expert with a focus on creating engaging content and effective marketing strategies.'
     }
   ]
 

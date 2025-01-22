@@ -1,150 +1,378 @@
+import Image from 'next/image'
 import { Metadata } from 'next'
-import BlogPostLayout from '@/components/BlogPostLayout'
+import { format } from 'date-fns'
+import BlogLayout from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'Link Building Strategies That Actually Work | SEO Greek Agency',
-  description: 'Discover effective link building strategies that can help improve your website\'s authority and rankings. Learn proven techniques for earning high-quality backlinks.',
+  title: 'Link Building Strategies That Actually Work',
+  description: 'Discover effective link building strategies that actually work in 2025. Learn how to build high-quality backlinks, improve your website\'s authority, and boost your search engine rankings.',
   openGraph: {
     title: 'Link Building Strategies That Actually Work',
-    description: 'Discover effective link building strategies that can help improve your website\'s authority and rankings.',
-    type: 'article',
-    publishedTime: '2024-12-20T00:00:00Z',
-    authors: ['Sarah Johnson'],
-    images: [
-      {
-        url: 'https://www.kasiotisg.com/blog/link-building.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Link Building Strategies',
-      },
-    ],
+    description: 'Discover effective link building strategies that actually work in 2025. Learn how to build high-quality backlinks, improve your website\'s authority, and boost your search engine rankings.',
   },
   twitter: {
-    card: 'summary_large_image',
     title: 'Link Building Strategies That Actually Work',
-    description: 'Discover effective link building strategies that can help improve your website\'s authority and rankings.',
-    images: ['https://www.kasiotisg.com/blog/link-building.jpg'],
+    description: 'Discover effective link building strategies that actually work in 2025. Learn how to build high-quality backlinks, improve your website\'s authority, and boost your search engine rankings.',
   },
-  alternates: {
-    canonical: 'https://www.kasiotisg.com/blog/effective-link-building-strategies',
-  }
+  keywords: 'Link Building, SEO, Backlinks, Link Building Strategies, Digital PR, Content Marketing, Broken Link Building, Resource Pages, Competitor Analysis, Guest Posting, SEO Tools, Domain Authority'
 }
 
-const content = `
-  <h2>The State of Link Building in 2025</h2>
-  <p>Link building remains a crucial factor in SEO, but the focus has shifted towards quality, relevance, and natural link acquisition.</p>
+const tableOfContents = [
+  { title: 'Introduction', id: 'introduction' },
+  { title: 'State of Link Building', id: 'state' },
+  { title: 'Content-Based Link Building', id: 'content-based' },
+  { title: 'Digital PR and Outreach', id: 'digital-pr' },
+  { title: 'Broken Link Building', id: 'broken-links' },
+  { title: 'Resource Page Link Building', id: 'resource-pages' },
+  { title: 'Competitor Link Analysis', id: 'competitor-analysis' },
+  { title: 'Guest Posting Evolution', id: 'guest-posting' },
+  { title: 'Link Building Tools', id: 'tools' },
+  { title: 'Measuring Success', id: 'measuring' },
+  { title: 'Conclusion', id: 'conclusion' }
+]
 
-  <h2>Content-Based Link Building</h2>
-  <p>Creating linkable content is the foundation of successful link building.</p>
-
-  <h3>Types of Linkable Content</h3>
-  <ul>
-    <li>Original research and studies</li>
-    <li>Industry surveys and reports</li>
-    <li>Infographics and data visualizations</li>
-    <li>Expert interviews and roundups</li>
-    <li>Comprehensive guides and tutorials</li>
-  </ul>
-
-  <h2>Digital PR and Outreach</h2>
-  <p>Building relationships with journalists and industry influencers can lead to natural link opportunities.</p>
-
-  <h3>Digital PR Strategies</h3>
-  <ul>
-    <li>HARO (Help a Reporter Out)</li>
-    <li>Press release distribution</li>
-    <li>Industry event coverage</li>
-    <li>Expert commentary</li>
-    <li>Newsjacking opportunities</li>
-  </ul>
-
-  <h2>Broken Link Building</h2>
-  <p>Finding and replacing broken links remains an effective strategy when done correctly.</p>
-
-  <h3>Broken Link Building Process</h3>
-  <ol>
-    <li>Find relevant broken links</li>
-    <li>Create replacement content</li>
-    <li>Contact website owners</li>
-    <li>Follow up and track results</li>
-  </ol>
-
-  <h2>Resource Page Link Building</h2>
-  <p>Resource pages are still valuable sources of relevant backlinks.</p>
-
-  <h3>Finding Resource Pages</h3>
-  <ul>
-    <li>Use advanced search operators</li>
-    <li>Monitor competitor backlinks</li>
-    <li>Industry directories</li>
-    <li>Educational institutions</li>
-  </ul>
-
-  <h2>Competitor Link Analysis</h2>
-  <p>Understanding your competitors' link profiles can reveal valuable opportunities.</p>
-
-  <h3>Analysis Steps</h3>
-  <ul>
-    <li>Identify top competitors</li>
-    <li>Analyze their backlink profiles</li>
-    <li>Find common link sources</li>
-    <li>Identify unique opportunities</li>
-  </ul>
-
-  <h2>Guest Posting Evolution</h2>
-  <p>Guest posting has evolved from mass submissions to strategic collaborations.</p>
-
-  <h3>Modern Guest Posting Tips</h3>
-  <ul>
-    <li>Focus on authoritative sites</li>
-    <li>Create unique, valuable content</li>
-    <li>Build long-term relationships</li>
-    <li>Avoid over-optimization</li>
-  </ul>
-
-  <h2>Link Building Tools</h2>
-  <p>The right tools can make link building more efficient and effective.</p>
-
-  <h3>Essential Tools</h3>
-  <ul>
-    <li>Ahrefs</li>
-    <li>Majestic</li>
-    <li>Moz Link Explorer</li>
-    <li>BuzzStream</li>
-    <li>Hunter.io</li>
-  </ul>
-
-  <h2>Measuring Link Building Success</h2>
-  <p>Track the right metrics to evaluate your link building efforts.</p>
-
-  <h3>Key Metrics</h3>
-  <ul>
-    <li>Domain Authority</li>
-    <li>Referral traffic</li>
-    <li>Rankings improvement</li>
-    <li>Conversion rates</li>
-  </ul>
-
-  <h2>Conclusion</h2>
-  <p>Successful link building in 2025 requires a diverse, strategic approach focused on quality over quantity. By implementing these strategies and consistently monitoring results, you can build a strong backlink profile that improves your search rankings and drives valuable traffic to your website.</p>
-`
+const relatedPosts = [
+  {
+    title: 'Content Optimization Tips for E-commerce',
+    slug: 'content-optimization-ecommerce',
+    image: '/blog/ecommerce-content.jpg'
+  },
+  {
+    title: 'Core Web Vitals Guide',
+    slug: 'core-web-vitals-guide',
+    image: '/blog/core-web-vitals.jpg'
+  },
+  {
+    title: 'Local SEO Strategies for 2025',
+    slug: 'local-seo-strategies-2025',
+    image: '/blog/local-seo.jpg'
+  }
+]
 
 export default function BlogPost() {
   return (
-    <BlogPostLayout
-      title="Link Building Strategies That Actually Work"
-      excerpt="Discover effective link building strategies that can help improve your website's authority and rankings."
-      content={content}
-      date="2024-12-20"
+    <BlogLayout
       author={{
-        name: "Sarah Johnson",
-        role: "Head of SEO Strategy",
-        image: "/team/sarah-johnson.jpg"
+        name: 'George K.',
+        role: 'CEO',
+        image: '/team/george-k.svg'
       }}
-      category="Link Building"
-      readTime="11 min read"
-      image="/blog/link-building.jpg"
-      slug="effective-link-building-strategies"
-    />
+      date={format(new Date('2024-12-20'), 'MMMM d, yyyy')}
+      tableOfContents={tableOfContents}
+      relatedPosts={relatedPosts}
+    >
+      <article>
+        <header className="mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
+            Link Building Strategies That Actually Work
+          </h1>
+
+          {/* Featured Image */}
+          <div className="relative aspect-video rounded-2xl overflow-hidden mb-8">
+            <Image
+              src="/blog/link-building.jpg"
+              alt="Link Building Strategies"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </header>
+
+        <div className="prose prose-lg max-w-none">
+          <h2 id="introduction" className="scroll-mt-20">Introduction</h2>
+          <p className="text-gray-700 leading-relaxed">
+            In the ever-evolving landscape of SEO, link building continues to be a cornerstone of a successful online presence. While the methods and tactics have evolved, the fundamental principle remains the same: acquiring high-quality backlinks from authoritative websites can significantly boost your website's authority and search engine rankings.
+          </p>
+
+          <h2 id="state" className="scroll-mt-20">The State of Link Building in 2025</h2>
+          <div className="bg-blue-50 rounded-xl p-6 my-8">
+            <h4 className="font-semibold mb-3">Key Principles</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="text-blue-600 mr-2">•</span>
+                <div>
+                  <strong>Quality over Quantity:</strong> One high-authority backlink is worth more than numerous low-quality links.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-blue-600 mr-2">•</span>
+                <div>
+                  <strong>Relevance:</strong> Links should come from websites that are topically related to your industry or niche.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-blue-600 mr-2">•</span>
+                <div>
+                  <strong>Natural Acquisition:</strong> Links should be earned naturally through valuable content and genuine outreach.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-blue-600 mr-2">•</span>
+                <div>
+                  <strong>User Experience:</strong> The linking page, as well as your own, should offer real value to the user.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h2 id="content-based" className="scroll-mt-20">Content-Based Link Building</h2>
+          <p className="text-gray-700 leading-relaxed">
+            Creating exceptional, link-worthy content is the foundation of any successful link building strategy. When you produce content that is genuinely valuable, informative, and engaging, other websites will naturally want to link to it as a resource.
+          </p>
+
+          <div className="bg-green-50 rounded-xl p-6 my-8">
+            <h4 className="font-semibold mb-3">Types of Linkable Content</h4>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    Original Research and Studies
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    Industry Surveys and Reports
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    Infographics and Data Visualizations
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    Expert Interviews and Roundups
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    Comprehensive Guides and Tutorials
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="digital-pr" className="scroll-mt-20">Digital PR and Outreach</h2>
+          <div className="bg-purple-50 rounded-xl p-6 my-8">
+            <h4 className="font-semibold mb-3">Digital PR Strategies</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="text-purple-600 mr-2">•</span>
+                <div>
+                  <strong>HARO:</strong> Respond to journalist queries to earn media mentions and backlinks.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-purple-600 mr-2">•</span>
+                <div>
+                  <strong>Press Release Distribution:</strong> Strategic press releases for newsworthy events.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-purple-600 mr-2">•</span>
+                <div>
+                  <strong>Industry Event Coverage:</strong> Cover events to attract links from organizers and media.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-purple-600 mr-2">•</span>
+                <div>
+                  <strong>Expert Commentary:</strong> Offer expertise to journalists and bloggers.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h2 id="broken-links" className="scroll-mt-20">Broken Link Building</h2>
+          <div className="bg-yellow-50 rounded-xl p-6 my-8">
+            <h4 className="font-semibold mb-3">Broken Link Building Process</h4>
+            <div className="space-y-4">
+              <div className="flex items-start">
+                <span className="text-yellow-600 font-bold mr-3">1.</span>
+                <div>
+                  <strong>Find Relevant Broken Links:</strong> Use tools like Ahrefs or Check My Links
+                </div>
+              </div>
+              <div className="flex items-start">
+                <span className="text-yellow-600 font-bold mr-3">2.</span>
+                <div>
+                  <strong>Create Replacement Content:</strong> Develop high-quality replacement content
+                </div>
+              </div>
+              <div className="flex items-start">
+                <span className="text-yellow-600 font-bold mr-3">3.</span>
+                <div>
+                  <strong>Contact Website Owners:</strong> Inform about broken links and suggest replacements
+                </div>
+              </div>
+              <div className="flex items-start">
+                <span className="text-yellow-600 font-bold mr-3">4.</span>
+                <div>
+                  <strong>Follow Up:</strong> Track and monitor outreach success
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="resource-pages" className="scroll-mt-20">Resource Page Link Building</h2>
+          <div className="bg-orange-50 rounded-xl p-6 my-8">
+            <h4 className="font-semibold mb-3">Finding Resource Pages</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="text-orange-600 mr-2">•</span>
+                <div>
+                  <strong>Advanced Search Operators:</strong> Use Google search operators to find relevant pages
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-600 mr-2">•</span>
+                <div>
+                  <strong>Competitor Backlinks:</strong> Analyze competitors' resource page links
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-600 mr-2">•</span>
+                <div>
+                  <strong>Industry Directories:</strong> Explore niche-specific directories
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-600 mr-2">•</span>
+                <div>
+                  <strong>Educational Institutions:</strong> Target university resource pages
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h2 id="competitor-analysis" className="scroll-mt-20">Competitor Link Analysis</h2>
+          <div className="grid md:grid-cols-2 gap-6 my-8">
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold mb-3">Analysis Steps</h4>
+              <ul className="space-y-2">
+                <li>Identify top competitors</li>
+                <li>Analyze backlink profiles</li>
+                <li>Find common link sources</li>
+                <li>Identify unique opportunities</li>
+              </ul>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold mb-3">Tools to Use</h4>
+              <ul className="space-y-2">
+                <li>Ahrefs</li>
+                <li>Majestic</li>
+                <li>Moz Link Explorer</li>
+                <li>SEMrush</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="guest-posting" className="scroll-mt-20">Guest Posting Evolution</h2>
+          <div className="bg-indigo-50 rounded-xl p-6 my-8">
+            <h4 className="font-semibold mb-3">Modern Guest Posting Tips</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="text-indigo-600 mr-2">•</span>
+                <div>
+                  <strong>Focus on Authority:</strong> Target high-quality, reputable websites
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-indigo-600 mr-2">•</span>
+                <div>
+                  <strong>Create Value:</strong> Develop unique, insightful content
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-indigo-600 mr-2">•</span>
+                <div>
+                  <strong>Build Relationships:</strong> Focus on long-term partnerships
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-indigo-600 mr-2">•</span>
+                <div>
+                  <strong>Natural Links:</strong> Avoid over-optimization
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h2 id="tools" className="scroll-mt-20">Link Building Tools</h2>
+          <div className="bg-red-50 rounded-xl p-6 my-8">
+            <h4 className="font-semibold mb-3">Essential Tools</h4>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h5 className="font-medium mb-2">Analysis Tools</h5>
+                <ul className="space-y-2">
+                  <li>Ahrefs</li>
+                  <li>Majestic</li>
+                  <li>Moz Link Explorer</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-medium mb-2">Outreach Tools</h5>
+                <ul className="space-y-2">
+                  <li>BuzzStream</li>
+                  <li>Hunter.io</li>
+                  <li>Pitchbox</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="measuring" className="scroll-mt-20">Measuring Link Building Success</h2>
+          <div className="bg-teal-50 rounded-xl p-6 my-8">
+            <h4 className="font-semibold mb-3">Key Metrics</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">•</span>
+                <div>
+                  <strong>Domain Authority:</strong> Track DA/DR improvements
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">•</span>
+                <div>
+                  <strong>Referral Traffic:</strong> Monitor traffic from backlinks
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">•</span>
+                <div>
+                  <strong>Rankings:</strong> Track keyword position improvements
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">•</span>
+                <div>
+                  <strong>Conversions:</strong> Measure impact on business goals
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h2 id="conclusion" className="scroll-mt-20">Conclusion</h2>
+          <p className="text-gray-700 leading-relaxed">
+            Successful link building in 2025 requires a multifaceted, strategic approach that prioritizes quality, relevance, and natural link acquisition. By creating valuable content, engaging in strategic outreach, and leveraging the right tools, you can build a strong backlink profile that improves your search engine rankings and drives targeted traffic to your website.
+          </p>
+
+          {/* Tags */}
+          <div className="mt-12 pt-6 border-t">
+            <h4 className="text-sm font-semibold text-gray-600 mb-3">Keywords</h4>
+            <div className="flex flex-wrap gap-2">
+              {metadata.keywords?.toString().split(', ').map((tag, index) => (
+                <span key={index} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </article>
+    </BlogLayout>
   )
 }

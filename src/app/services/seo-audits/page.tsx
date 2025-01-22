@@ -99,7 +99,7 @@ export default function SEOAuditsPage() {
         {/* Audit Process Visualization */}
         <div className="relative h-[500px] mb-20">
           <Image
-            src="/services/audit-process.svg"
+            src="/services/seo-audit-process-new.svg"
             alt="SEO Audit Process"
             fill
             className="object-contain"
@@ -169,7 +169,7 @@ export default function SEOAuditsPage() {
           </h3>
           <div className="relative h-[600px] rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="/services/audit-report-preview.svg"
+              src="/services/seo-audit-report-new.svg"
               alt="Sample SEO Audit Report"
               fill
               className="object-contain"
@@ -182,35 +182,61 @@ export default function SEOAuditsPage() {
           <h3 className="text-2xl font-bold mb-12">
             Professional Audit Tools
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <Image
-              src="/tools/screaming-frog.svg"
-              alt="Screaming Frog"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/ahrefs.svg"
-              alt="Ahrefs"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/semrush.svg"
-              alt="SEMrush"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/google-analytics.svg"
-              alt="Google Analytics"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/Screaming Frog.svg"
+                alt="Screaming Frog"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/ahrefs.svg"
+                alt="Ahrefs"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google-search-console.svg"
+                alt="Google Search Console"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google_analytics.svg"
+                alt="Google Analytics"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google_bigquery.svg"
+                alt="Google BigQuery"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/semrush.svg"
+                alt="SEMrush"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>

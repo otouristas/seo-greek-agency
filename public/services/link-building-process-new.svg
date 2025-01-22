@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F9FAFB"/>
+
+  <!-- Process Steps -->
+  <!-- Step 1: Research -->
+  <circle cx="100" cy="200" r="60" fill="#BFDBFE"/>
+  <circle cx="100" cy="200" r="55" fill="white"/>
+  <text x="100" y="190" font-family="Arial" font-size="14" font-weight="bold" fill="#1D4ED8" text-anchor="middle">Research</text>
+  <text x="100" y="210" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">Identify Opportunities</text>
+
+  <!-- Arrow 1 -->
+  <path d="M170 200 L230 200" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2: Outreach -->
+  <circle cx="300" cy="200" r="60" fill="#BFDBFE"/>
+  <circle cx="300" cy="200" r="55" fill="white"/>
+  <text x="300" y="190" font-family="Arial" font-size="14" font-weight="bold" fill="#1D4ED8" text-anchor="middle">Outreach</text>
+  <text x="300" y="210" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">Connect & Engage</text>
+
+  <!-- Arrow 2 -->
+  <path d="M370 200 L430 200" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3: Content -->
+  <circle cx="500" cy="200" r="60" fill="#BFDBFE"/>
+  <circle cx="500" cy="200" r="55" fill="white"/>
+  <text x="500" y="190" font-family="Arial" font-size="14" font-weight="bold" fill="#1D4ED8" text-anchor="middle">Content</text>
+  <text x="500" y="210" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">Create Value</text>
+
+  <!-- Arrow 3 -->
+  <path d="M570 200 L630 200" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 4: Links -->
+  <circle cx="700" cy="200" r="60" fill="#BFDBFE"/>
+  <circle cx="700" cy="200" r="55" fill="white"/>
+  <text x="700" y="190" font-family="Arial" font-size="14" font-weight="bold" fill="#1D4ED8" text-anchor="middle">Links</text>
+  <text x="700" y="210" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">Build Authority</text>
+
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3B82F6"/>
+    </marker>
+  </defs>
+
+  <!-- Process Details -->
+  <g transform="translate(0, 300)">
+    <!-- Research Details -->
+    <text x="100" y="0" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="middle">
+      • Competitor Analysis
+      <tspan x="100" dy="15">• Opportunity Discovery</tspan>
+      <tspan x="100" dy="15">• Target Selection</tspan>
+    </text>
+
+    <!-- Outreach Details -->
+    <text x="300" y="0" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="middle">
+      • Personalized Contact
+      <tspan x="300" dy="15">• Relationship Building</tspan>
+      <tspan x="300" dy="15">• Value Proposition</tspan>
+    </text>
+
+    <!-- Content Details -->
+    <text x="500" y="0" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="middle">
+      • Quality Content
+      <tspan x="500" dy="15">• Expert Insights</tspan>
+      <tspan x="500" dy="15">• Unique Value</tspan>
+    </text>
+
+    <!-- Links Details -->
+    <text x="700" y="0" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="middle">
+      • Quality Backlinks
+      <tspan x="700" dy="15">• Domain Authority</tspan>
+      <tspan x="700" dy="15">• Natural Growth</tspan>
+    </text>
+  </g>
+</svg>

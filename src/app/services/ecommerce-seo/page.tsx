@@ -166,23 +166,66 @@ export default function EcommerceSEOPage() {
           </div>
         </div>
 
-        {/* Platform Support */}
-        <div className="text-center">
+        {/* Supported Platforms */}
+        <div className="mt-20 text-center">
           <h3 className="text-2xl font-bold mb-12">
             Supported E-commerce Platforms
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {platforms.map((platform, index) => (
-              <div key={index} className="p-6 bg-white rounded-xl shadow-lg">
-                <Image
-                  src={platform.logo}
-                  alt={platform.name}
-                  width={150}
-                  height={50}
-                  className="mx-auto"
-                />
-              </div>
-            ))}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/woocommerce-svgrepo-com.svg"
+                alt="WordPress WooCommerce"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/shopify.svg"
+                alt="Shopify"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/platforms/magento.svg"
+                alt="Magento"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/react-2.svg"
+                alt="React"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/opencart.svg"
+                alt="OpenCart"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/prestashop-svgrepo-com.svg"
+                alt="PrestaShop"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
 

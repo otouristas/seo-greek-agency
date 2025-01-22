@@ -129,44 +129,57 @@ export default function KeywordResearchPage() {
           </div>
         </div>
 
-        {/* Tools Section */}
-        <div className="text-center max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold mb-6">
+        {/* Industry-Leading Tools & Technology */}
+        <div className="mt-20 text-center">
+          <h3 className="text-2xl font-bold mb-12">
             Industry-Leading Tools & Technology
           </h3>
-          <p className="text-gray-600 mb-12">
-            We leverage the most powerful SEO tools in the industry to ensure accurate
-            and comprehensive keyword research results.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <Image
-              src="/tools/semrush-logo.svg"
-              alt="SEMrush"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/ahrefs-logo.svg"
-              alt="Ahrefs"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/moz-logo.svg"
-              alt="Moz"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
-            <Image
-              src="/tools/google-search-console.svg"
-              alt="Google Search Console"
-              width={150}
-              height={50}
-              className="mx-auto"
-            />
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/semrush.svg"
+                alt="SEMrush"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/ahrefs.svg"
+                alt="Ahrefs"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google-search-console.svg"
+                alt="Google Search Console"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google_analytics.svg"
+                alt="Google Analytics"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow-lg flex items-center justify-center">
+              <Image
+                src="/logos/google_bigquery.svg"
+                alt="Google BigQuery"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>

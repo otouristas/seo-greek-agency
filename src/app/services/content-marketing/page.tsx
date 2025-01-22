@@ -150,7 +150,7 @@ export default function ContentMarketingPage() {
           </h3>
           <div className="relative h-[400px]">
             <Image
-              src="/services/content-calendar.svg"
+              src="/services/content-plan.svg"
               alt="Content Calendar"
               fill
               className="object-contain"
@@ -165,52 +165,48 @@ export default function ContentMarketingPage() {
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="p-6 rounded-xl bg-white shadow-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">
-                <Image
-                  src="/icons/traffic.svg"
-                  alt="Traffic"
-                  width={40}
-                  height={40}
-                  className="mx-auto mb-4"
-                />
-                Traffic
-              </div>
+              <Image
+                src="/icons/traffic.svg"
+                alt="Traffic"
+                width={40}
+                height={40}
+                className="mx-auto mb-4"
+              />
+              <h4 className="text-xl font-bold text-gray-900 mb-2">Traffic</h4>
+              <p className="text-gray-600 text-sm">Increased organic visitors</p>
             </div>
             <div className="p-6 rounded-xl bg-white shadow-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">
-                <Image
-                  src="/icons/engagement.svg"
-                  alt="Engagement"
-                  width={40}
-                  height={40}
-                  className="mx-auto mb-4"
-                />
-                Engagement
-              </div>
+              <Image
+                src="/icons/engagement.svg"
+                alt="Engagement"
+                width={40}
+                height={40}
+                className="mx-auto mb-4"
+              />
+              <h4 className="text-xl font-bold text-gray-900 mb-2">Engagement</h4>
+              <p className="text-gray-600 text-sm">Higher user interaction</p>
             </div>
             <div className="p-6 rounded-xl bg-white shadow-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">
-                <Image
-                  src="/icons/conversions.svg"
-                  alt="Conversions"
-                  width={40}
-                  height={40}
-                  className="mx-auto mb-4"
-                />
-                Conversions
-              </div>
+              <Image
+                src="/icons/conversions.svg"
+                alt="Conversions"
+                width={40}
+                height={40}
+                className="mx-auto mb-4"
+              />
+              <h4 className="text-xl font-bold text-gray-900 mb-2">Conversions</h4>
+              <p className="text-gray-600 text-sm">Better lead generation</p>
             </div>
             <div className="p-6 rounded-xl bg-white shadow-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">
-                <Image
-                  src="/icons/roi.svg"
-                  alt="ROI"
-                  width={40}
-                  height={40}
-                  className="mx-auto mb-4"
-                />
-                ROI
-              </div>
+              <Image
+                src="/icons/analysis.svg"
+                alt="ROI"
+                width={40}
+                height={40}
+                className="mx-auto mb-4"
+              />
+              <h4 className="text-xl font-bold text-gray-900 mb-2">ROI</h4>
+              <p className="text-gray-600 text-sm">Measurable returns</p>
             </div>
           </div>
         </div>
