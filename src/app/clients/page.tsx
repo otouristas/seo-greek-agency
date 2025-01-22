@@ -1,234 +1,182 @@
 import Image from 'next/image'
 import { Metadata } from 'next'
+import TestimonialCarousel from '@/components/TestimonialCarousel'
 
 export const metadata: Metadata = {
-  title: 'Our Clients | Businesses We\'ve Helped Succeed',
-  description: 'See the diverse range of businesses we\'ve helped achieve their online goals with our expert SEO services.',
+  title: 'Our Clients | SEO Greek Agency Success Stories',
+  description: 'Discover how we\'ve helped businesses across hospitality, sports retail, health, and automotive industries achieve remarkable growth through SEO.',
   openGraph: {
-    title: 'Our Clients | Businesses We\'ve Helped Succeed',
-    description: 'See the diverse range of businesses we\'ve helped achieve their online goals with our expert SEO services.',
+    title: 'Our Clients | SEO Greek Agency Success Stories',
+    description: 'Discover how we\'ve helped businesses across hospitality, sports retail, health, and automotive industries achieve remarkable growth through SEO.',
   },
   twitter: {
-    title: 'Our Clients | Businesses We\'ve Helped Succeed',
-    description: 'See the diverse range of businesses we\'ve helped achieve their online goals with our expert SEO services.',
+    title: 'Our Clients | SEO Greek Agency Success Stories',
+    description: 'Discover how we\'ve helped businesses across hospitality, sports retail, health, and automotive industries achieve remarkable growth through SEO.',
   },
   alternates: {
-    canonical: 'https://www.anotherseoguru.com/clients',
+    canonical: 'https://www.kasiotisg.com/clients',
   }
 }
 
-interface Client {
+const testimonials = [
+  {
+    name: 'Meropi Rooms',
+    position: 'Hospitality',
+    content: 'The SEO strategy implemented by the team significantly improved our visibility in Google Maps and increased our direct bookings.'
+  },
+  {
+    name: 'JD Sports Greece',
+    position: 'Sports Retail',
+    content: 'Their expertise in e-commerce SEO helped us optimize our product pages and improve our search rankings across multiple regions.'
+  },
+  {
+    name: 'Αλλάζω Διατροφή',
+    position: 'Health & Wellness',
+    content: 'Outstanding results in helping us rank for competitive health and nutrition keywords. Our organic traffic has grown significantly.'
+  },
+  {
+    name: 'Antiparos Rent A Car',
+    position: 'Car Rental',
+    content: 'Local SEO expertise that delivered real results. Our visibility for car rental searches in Antiparos has improved dramatically.'
+  },
+  {
+    name: 'Cosmos Sport',
+    position: 'Sports Retail',
+    content: 'Comprehensive SEO strategy that helped us compete effectively in both Greek and Cypriot markets.'
+  },
+  {
+    name: 'Villa Clara Olivia',
+    position: 'Hospitality',
+    content: 'Excellent work on optimizing our villa rental listings. We\'ve seen a significant increase in direct bookings.'
+  }
+]
+
+interface Industry {
   name: string;
-  industry: string;
-  logo: string;
-  testimonial?: {
-    text: string;
-    author: string;
-    position: string;
-    image: string;
-  };
+  clients: {
+    name: string;
+    logo: string;
+  }[];
 }
 
 export default function ClientsPage() {
-  const clients: Client[] = [
+  const industries: Industry[] = [
     {
-      name: 'TechStart Solutions',
-      industry: 'Technology',
-      logo: '/portfolio/techstart-logo.svg',
-      testimonial: {
-        text: 'Another SEO Guru transformed our online presence. Their data-driven approach and deep understanding of technical SEO helped us achieve remarkable growth in organic traffic.',
-        author: 'John Smith',
-        position: 'CEO',
-        image: '/testimonials/john-smith.jpg'
-      }
+      name: 'Hospitality & Tourism',
+      clients: [
+        { name: 'Meropi Rooms', logo: '/portfolio/meropirooms.png' },
+        { name: 'Morpheas Rooms', logo: '/portfolio/morpheas-logo.png' },
+        { name: 'ALK Hotel', logo: '/portfolio/alkhotel.png' },
+        { name: 'Greece Cyclades', logo: '/portfolio/greece-cyclades-favicon.svg' },
+        { name: 'Elite Hospitality', logo: '/portfolio/elitehospitality.png' },
+        { name: 'Villa Clara Olivia', logo: '/portfolio/villa-olivia-clara-logo-768x204.png' },
+        { name: 'Antiparos Rooms', logo: '/portfolio/antiparosrooms.png' },
+        { name: 'Antiparos Transfer', logo: '/portfolio/antiparostransfer.png' }
+      ]
     },
     {
-      name: 'Green Living Co',
-      industry: 'Eco-Friendly Products',
-      logo: '/portfolio/greenliving-logo.svg',
-      testimonial: {
-        text: "The team's expertise in e-commerce SEO and local search optimization has been invaluable. Our online sales have grown significantly since partnering with them.",
-        author: 'Sarah Chen',
-        position: 'Marketing Director',
-        image: '/testimonials/sarah-chen.jpg'
-      }
+      name: 'Sports & Retail',
+      clients: [
+        { name: 'Villarreal CF', logo: '/portfolio/logo-villarreal-web.png' },
+        { name: 'JD Sports', logo: '/portfolio/jd-desktop-logo.webp' },
+        { name: 'Cosmos Sport', logo: '/portfolio/cosmos-sport-logo-17075792651.webp' },
+        { name: 'Sneaker10', logo: '/portfolio/sneaker10-logo-17075791422.webp' },
+        { name: 'Sports Factory', logo: '/portfolio/sportsfactory-outlet-logo-17153332223.webp' },
+        { name: 'Run Dome', logo: '/portfolio/rundome-logo-17075791815.webp' },
+        { name: 'Active Sport', logo: '/portfolio/activesport.png' },
+        { name: 'Slam Dunk', logo: '/portfolio/slam-dunk-logo-17075791644.webp' },
+        { name: 'Box2Box', logo: '/portfolio/box2box_logo.png' }
+      ]
     },
     {
-      name: 'FinPro Advisors',
-      industry: 'Financial Services',
-      logo: '/portfolio/finpro-logo.svg',
-      testimonial: {
-        text: 'Working with Another SEO Guru has been a game-changer. Their content strategy helped us establish authority in the financial sector and drive qualified leads.',
-        author: 'Michael Ross',
-        position: 'Founder',
-        image: '/testimonials/michael-ross.jpg'
-      }
+      name: 'Health & Wellness',
+      clients: [
+        { name: 'Αλλάζω Διατροφή', logo: '/portfolio/allazwdiatrofi.png' },
+        { name: 'Health Assistance', logo: '/portfolio/healthassistance.png' }
+      ]
     },
     {
-      name: 'HealthTech Plus',
-      industry: 'Healthcare',
-      logo: '/clients/healthtech-logo.svg'
+      name: 'Car Rental',
+      clients: [
+        { name: 'Antiparos Rent A Car', logo: '/portfolio/antiparosrentacar.png' },
+        { name: 'Aggelos Rentals', logo: '/portfolio/aggelosrentals.png' },
+        { name: 'Rent A Car Antiparos', logo: '/portfolio/rentacarantiparos.png' },
+        { name: 'RAC SA', logo: '/portfolio/rac sa.jpg' },
+        { name: 'Athens Rent A Car', logo: '/portfolio/athensrentacar.png' }
+      ]
     },
     {
-      name: 'Urban Eats',
-      industry: 'Restaurant Chain',
-      logo: '/clients/urbaneats-logo.svg'
-    },
-    {
-      name: 'EduLearn',
-      industry: 'Education',
-      logo: '/clients/edulearn-logo.svg'
-    },
-    {
-      name: 'FitLife Gear',
-      industry: 'Fitness Equipment',
-      logo: '/clients/fitlife-logo.svg'
-    },
-    {
-      name: 'Travel Wise',
-      industry: 'Travel & Tourism',
-      logo: '/clients/travelwise-logo.svg'
-    },
-    {
-      name: 'Pet Paradise',
-      industry: 'Pet Care',
-      logo: '/clients/petparadise-logo.svg'
+      name: 'Education & Other',
+      clients: [
+        { name: 'Planetarium of Athens / Eugenides Foundation', logo: '/portfolio/eefedu.png' },
+        { name: 'The Agency PR', logo: '/portfolio/theagencylogo.png' },
+        { name: 'Petsville', logo: '/portfolio/petsville.png' }
+      ]
     }
   ]
 
-  const industries = Array.from(new Set(clients.map(client => client.industry)))
-
   return (
-    <div className="pb-20">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative h-[500px] bg-gradient-to-r from-blue-900 to-blue-800 text-white overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="/hero-pattern.svg"
-            alt="Background Pattern"
-            fill
-            className="object-cover"
-          />
-        </div>
-
-        {/* Floating Elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse delay-1000" />
-          <div className="absolute top-40 right-1/4 w-24 h-24 bg-blue-300/20 rounded-full blur-xl animate-pulse delay-500" />
-        </div>
-
-        <div className="container mx-auto px-4 h-full flex items-center relative">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-8">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">
-                Trusted by Industry<br />Leaders Worldwide
-              </h1>
-              <p className="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto">
-                Join hundreds of successful businesses who have transformed 
-                their digital presence with Another SEO Guru.
-              </p>
-            </div>
-            
-            {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto">
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">500+</div>
-                <div className="text-sm text-blue-200">Happy Clients</div>
-              </div>
-              <div className="text-center relative">
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-px h-12 bg-gradient-to-b from-transparent via-blue-400 to-transparent"></div>
-                <div className="text-3xl font-bold mb-1">12+</div>
-                <div className="text-sm text-blue-200">Industries</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">98%</div>
-                <div className="text-sm text-blue-200">Satisfaction Rate</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Decorative Bottom Border */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
-      </section>
-
-      {/* Featured Testimonials */}
-      <section className="py-20 bg-gray-50">
+      <section className="bg-gradient-to-r from-blue-900 to-blue-800 py-20 text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {clients.filter(client => client.testimonial).map((client, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-8 relative">
-                {/* Quote Icon */}
-                <div className="absolute -top-4 right-8 text-5xl text-blue-500 opacity-50">
-                  "
-                </div>
-                
-                <div className="relative mb-6">
-                  <Image
-                    src={client.logo}
-                    alt={`${client.name} logo`}
-                    width={120}
-                    height={40}
-                    className="object-contain"
-                  />
-                </div>
-
-                <p className="text-gray-600 mb-6">{client.testimonial!.text}</p>
-
-                <div className="flex items-center">
-                  <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4">
-                    <Image
-                      src={client.testimonial!.image}
-                      alt={client.testimonial!.author}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <div className="font-semibold">{client.testimonial!.author}</div>
-                    <div className="text-sm text-gray-500">
-                      {client.testimonial!.position}, {client.name}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Success Stories</h1>
+            <p className="text-xl text-gray-200">
+              We've helped businesses across various industries achieve remarkable growth through strategic SEO.
+              Here are some of the companies we're proud to work with.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Client Logo Grid */}
+      {/* Testimonials Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+            <p className="text-gray-600 text-lg">
+              Real feedback from businesses we've helped succeed online
+            </p>
+          </div>
+          <TestimonialCarousel testimonials={testimonials} />
+        </div>
+      </section>
+
+      {/* Client Logos by Industry */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Valued Clients</h2>
-          
-          {/* Industry Filter */}
-          <div className="flex justify-center mb-12">
-            <select className="px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-              <option value="">All Industries</option>
-              {industries.map((industry, index) => (
-                <option key={index} value={industry}>{industry}</option>
-              ))}
-            </select>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Clients</h2>
+            <p className="text-gray-600 text-lg">
+              Trusted by businesses across multiple industries
+            </p>
           </div>
 
-          {/* Logo Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {clients.map((client, index) => (
-              <div
-                key={index}
-                className="aspect-video bg-white rounded-lg shadow-md p-8 flex items-center justify-center group hover:shadow-lg transition-shadow"
-              >
-                <div className="relative w-full h-full">
-                  <Image
-                    src={client.logo}
-                    alt={`${client.name} logo`}
-                    fill
-                    className="object-contain filter group-hover:brightness-110 transition-all"
-                  />
+          <div className="space-y-16">
+            {industries.map((industry, index) => (
+              <div key={index} className="bg-white rounded-2xl shadow-lg p-8">
+                <h3 className="text-2xl font-bold mb-8 text-blue-900">{industry.name}</h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                  {industry.clients.map((client, clientIndex) => (
+                    <div 
+                      key={clientIndex} 
+                      className="flex items-center justify-center p-4 bg-white rounded-lg border border-gray-100 hover:shadow-md transition-shadow"
+                    >
+                      <div className="relative h-16 w-full">
+                        <Image
+                          src={client.logo}
+                          alt={`${client.name} logo`}
+                          fill
+                          className={`object-contain ${
+                            client.name === 'Meropi Rooms' || client.name === 'Morpheas Rooms'
+                              ? '[filter:invert(27%)_sepia(51%)_saturate(2878%)_hue-rotate(210deg)_brightness(104%)_contrast(97%)]'
+                              : ''
+                          }`}
+                        />
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}

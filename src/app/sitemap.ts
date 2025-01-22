@@ -19,7 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contact',
     '/free-seo-audit',
     '/pricing',
-    '/portfolio',
     '/about',
     '/privacy-policy',
     '/terms-of-service'
