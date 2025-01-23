@@ -12,12 +12,26 @@ module.exports = {
     const priorities = {
       '/': 1.0,
       '/services': 0.9,
+      '/services/technical-seo': 0.9,
+      '/services/content-optimization': 0.9,
+      '/services/link-building': 0.9,
       '/about': 0.8,
       '/portfolio': 0.8,
       '/clients': 0.8,
       '/pricing': 0.9,
       '/contact': 0.8,
-      '/blog': 0.8
+      '/blog': 0.8,
+      '/free-seo-audit': 0.9
+    }
+
+    // Higher priority for blog posts
+    if (path.startsWith('/blog/')) {
+      return {
+        loc: path,
+        changefreq: 'monthly',
+        priority: 0.8,
+        lastmod: new Date().toISOString()
+      }
     }
 
     return {
