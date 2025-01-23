@@ -1,11 +1,31 @@
-'use client'
-
 import Image from 'next/image'
+import { Metadata } from 'next'
 import Link from 'next/link'
 import { useForm, ValidationError } from '@formspree/react'
 import Hero from '@/components/Hero'
 import CTAButton from '@/components/CTAButton'
 import FAQAccordion from '@/components/FAQAccordion'
+
+export const metadata: Metadata = {
+  title: 'Free SEO Audit | Discover Your Website\'s Potential',
+  description: 'Get a free comprehensive SEO audit of your website. Uncover opportunities for improvement and see how you can outrank your competitors.',
+  alternates: {
+    canonical: 'https://kasiotisg.com/free-seo-audit',
+  },
+  openGraph: {
+    title: 'Free SEO Audit | Discover Your Website\'s Potential',
+    description: 'Get a free comprehensive SEO audit of your website. Uncover opportunities for improvement and see how you can outrank your competitors.',
+    type: 'website',
+    url: 'https://kasiotisg.com/free-seo-audit',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free SEO Audit | Discover Your Website\'s Potential',
+    description: 'Get a free comprehensive SEO audit of your website. Uncover opportunities for improvement and see how you can outrank your competitors.',
+  }
+}
+
+'use client'
 
 interface AuditFeature {
   title: string;
