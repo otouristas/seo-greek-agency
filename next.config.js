@@ -17,6 +17,17 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
     optimizePackageImports: ['@heroicons/react'],
+    optimizeFonts: true,
+    // Configure critters for CSS optimization
+    critters: {
+      preload: 'media',
+      preloadFonts: true,
+      inlineFonts: true,
+      pruneSource: true,
+      reduceInlineStyles: true,
+      mergeStylesheets: true,
+      additionalStylesheets: ['**/node_modules/**/*.css']
+    }
   },
   async headers() {
     return [
