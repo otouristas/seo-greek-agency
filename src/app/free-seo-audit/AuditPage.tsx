@@ -86,7 +86,7 @@ export default function AuditPage() {
     <div className="bg-gray-50">
       <Hero
         title="Free SEO Audit"
-        subtitle="Discover untapped opportunities to improve your website's search performance"
+        description="Discover untapped opportunities to improve your website's search performance"
         image="/images/audit-hero.jpg"
       />
 
@@ -184,7 +184,15 @@ export default function AuditPage() {
             <h2 className="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
           </div>
           <div className="max-w-3xl mx-auto">
-            <FAQAccordion faqs={faqs} />
+            <FAQAccordion faqs={[
+              {
+                category: "SEO Audit",
+                questions: faqs.map(({ question, answer }) => ({
+                  question,
+                  answer
+                }))
+              }
+            ]} />
           </div>
         </div>
 

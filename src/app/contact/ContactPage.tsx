@@ -29,8 +29,8 @@ function ContactInfo() {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900">Phone</h3>
-            <p className="text-gray-600">+30 694 6844 697</p>
+            <h3 className="font-semibold text-gray-900">WhatsApp Only</h3>
+            <p className="text-gray-600">+48 453 134 821</p>
           </div>
         </div>
         <p className="text-sm text-gray-500 ml-12">Mon-Fri 9am-6pm GMT+2</p>

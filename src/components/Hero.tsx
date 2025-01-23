@@ -12,6 +12,7 @@ interface HeroProps {
     text: string;
     link: string;
   };
+  image?: string;
 }
 
 export default function Hero({
@@ -21,7 +22,8 @@ export default function Hero({
   showCTA = false,
   ctaText = 'Get Free SEO Audit',
   ctaLink = '/free-seo-audit',
-  secondaryCTA
+  secondaryCTA,
+  image
 }: HeroProps) {
   const heightClass = {
     small: 'h-[300px]',

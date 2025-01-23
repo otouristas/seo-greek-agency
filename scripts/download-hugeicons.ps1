@@ -69,7 +69,7 @@ $iconMap = @{
 }
 
 # Function to download icon
-function Download-Icon {
+function Get-Icon {
     param (
         [string]$iconName,
         [string]$hugeiconsPath,
@@ -83,29 +83,30 @@ function Download-Icon {
     }
 
     try {
-        Write-Host "Downloading $iconName..."
+        Write-Host "Downloading ${iconName}..."
         Invoke-RestMethod -Uri $url -Headers $headers -OutFile $outputPath
-        Write-Host "Successfully downloaded $iconName"
+        Write-Host "Successfully downloaded ${iconName}"
     }
     catch {
-        Write-Host "Error downloading $iconName: $_"
+        $errorMessage = $_.Exception.Message
+        Write-Host "Error downloading ${iconName}: ${errorMessage}"
     }
 }
 
 # Main execution
-if ([string]::IsNullOrEmpty($hugeiconsToken)) {
+if ($null -eq $hugeiconsToken -or $hugeiconsToken -eq '') {
     Write-Host "Please add your Hugeicons API token to the script first."
     exit 1
 }
 
 foreach ($icon in $iconMap.GetEnumerator()) {
     $outputPath = if ($icon.Key -like "facebook" -or $icon.Key -like "instagram" -or $icon.Key -like "linkedin" -or $icon.Key -like "twitter") {
-        "./public/social/$($icon.Key).svg"
+        "./public/social/${icon.Key}.svg"
     } else {
-        "./public/icons/$($icon.Key).svg"
+        "./public/icons/${icon.Key}.svg"
     }
     
-    Download-Icon -iconName $icon.Key -hugeiconsPath $icon.Value -outputPath $outputPath
+    Get-Icon -iconName $icon.Key -hugeiconsPath $icon.Value -outputPath $outputPath
 }
 
 Write-Host "Icon download and replacement complete!"

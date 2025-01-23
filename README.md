@@ -416,3 +416,134 @@ function App() {
 
 export default App;
 
+-----------------------
+  SEO READ ME 
+
+ 1. Implement Canonical URLs
+Use the next/head component to add canonical tags to your pages. For dynamic pages, you can compute the canonical URL dynamically.
+
+javascript
+Copy
+Edit
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
+const SEO = ({ title, description, canonical }) => {
+  const router = useRouter();
+  const canonicalURL = canonical || `https://kasiotisg.com${router.asPath.split('?')[0]}`;
+
+  return (
+    <Head>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <link rel="canonical" href={canonicalURL} />
+    </Head>
+  );
+};
+
+export default SEO;
+Usage in a Page Component:
+
+javascript
+Copy
+Edit
+import SEO from '../components/SEO';
+
+
+2. Dynamic Canonical URLs for Dynamic Routes
+For pages like /blog/[slug], dynamically set the canonical URL:
+
+javascript
+Copy
+Edit
+import { useRouter } from 'next/router';
+import Head from 'next/head';
+
+export default function BlogPost({ post }) {
+  const router = useRouter();
+
+  const canonicalURL = `https://kasiotisg.com${router.asPath.split('?')[0]}`;
+
+  return (
+    <>
+      <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.description} />
+        <link rel="canonical" href={canonicalURL} />
+      </Head>
+      <h1>{post.title}</h1>
+      <p>{post.content}</p>
+    </>
+  );
+}
+3. Use the Next.js next-sitemap Package
+Automate sitemap and robots.txt generation with the next-sitemap package.
+
+Install next-sitemap:
+
+bash
+Copy
+Edit
+npm install next-sitemap
+Add Configuration:
+
+Create a next-sitemap.config.js file in the root of your project:
+
+javascript
+Copy
+Edit
+module.exports = {
+  siteUrl: 'https://kasiotisg.com',
+  generateRobotsTxt: true, // (optional)
+  exclude: ['/admin/*'], // Exclude specific paths if needed
+};
+Add to package.json:
+
+json
+Copy
+Edit
+"scripts": {
+  "postbuild": "next-sitemap"
+}
+Run After Build:
+
+bash
+Copy
+Edit
+npm run build && npm run postbuild
+4. Optimize Meta Tags
+Always add the required meta tags for better SEO.
+
+javascript
+Copy
+Edit
+<Head>
+  <title>Page Title</title>
+  <meta name="description" content="Description of the page" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Open Graph Title" />
+  <meta property="og:description" content="Open Graph Description" />
+  <meta property="og:url" content="https://kasiotisg.com/current-page" />
+  <meta property="og:type" content="website" />
+</Head>
+5. Fix Canonical Issues
+Double-check canonical URL usage by testing your pages with Google Search Console or SEO tools like Screaming Frog. Use the Inspect URL tool to see how Google interprets your pages.
+
+6. Use getStaticProps or getServerSideProps for Metadata
+For SEO-driven content, dynamically fetch metadata during build or request time.
+
+javascript
+Copy
+Edit
+export async function getStaticProps() {
+  const post = await fetch('https://api.example.com/post/123').then((res) => res.json());
+  return {
+    props: {
+      post,
+    },
+  };
+}
+7. Performance Optimizations
+Lazy Load Images: Use the Next.js <Image> component for optimized image loading.
+Caching and Compression: Ensure your hosting supports caching and Gzip compression.
+Check Core Web Vitals: Use Google Lighthouse to optimize metrics like LCP, FID, and CLS.
