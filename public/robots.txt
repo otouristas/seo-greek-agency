@@ -7,4 +7,4 @@ Disallow: /private/
 Disallow: /thank-you/
 
 # Sitemap location
-Sitemap: https://www.anotherseoguru.com/sitemap.xml
+Sitemap: https://kasiotisg.com/sitemap.xml
