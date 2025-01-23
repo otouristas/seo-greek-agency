@@ -1,50 +1,119 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.kasiotisg.com'
+  const baseUrl = 'https://kasiotisg.com'
   
   const routes = [
-    '',
-    '/services',
-    '/services/technical-seo',
-    '/services/on-page-seo',
-    '/services/off-page-seo',
-    '/services/local-seo',
-    '/services/ecommerce-seo',
-    '/services/content-marketing',
-    '/services/keyword-research',
-    '/services/seo-audits',
-    '/services/analytics-reporting',
-    '/blog',
-    '/contact',
-    '/free-seo-audit',
-    '/pricing',
-    '/about',
-    '/privacy-policy',
-    '/terms-of-service'
+    {
+      route: '',
+      priority: 1.0,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/services',
+      priority: 0.9,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/services/seo-audits',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/services/technical-seo',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/services/on-page-seo',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/services/off-page-seo',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/services/local-seo',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/services/ecommerce-seo',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/services/content-marketing',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/services/keyword-research',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/services/analytics-reporting',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/blog',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/contact',
+      priority: 0.7,
+      changeFrequency: 'monthly'
+    },
+    {
+      route: '/free-seo-audit',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/pricing',
+      priority: 0.8,
+      changeFrequency: 'weekly'
+    },
+    {
+      route: '/about',
+      priority: 0.7,
+      changeFrequency: 'monthly'
+    },
+    {
+      route: '/privacy-policy',
+      priority: 0.5,
+      changeFrequency: 'monthly'
+    },
+    {
+      route: '/terms-of-service',
+      priority: 0.5,
+      changeFrequency: 'monthly'
+    }
   ]
 
+  // Blog posts with their own configuration
   const blogPosts = [
     '/blog/local-seo-strategies-2025',
     '/blog/future-of-seo-ai-machine-learning',
     '/blog/effective-link-building-strategies',
     '/blog/core-web-vitals-guide',
     '/blog/content-optimization-ecommerce'
-  ]
+  ].map(post => ({
+    route: post,
+    priority: 0.7,
+    changeFrequency: 'monthly' as const
+  }))
 
-  const staticPages = routes.map(route => ({
+  // Combine and format all routes
+  return [...routes, ...blogPosts].map(({ route, priority, changeFrequency }) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
-    changeFrequency: 'monthly' as const,
-    priority: route === '' ? 1 : 0.8
+    changeFrequency: changeFrequency,
+    priority: priority
   }))
-
-  const blogPages = blogPosts.map(post => ({
-    url: `${baseUrl}${post}`,
-    lastModified: new Date().toISOString().split('T')[0],
-    changeFrequency: 'monthly' as const,
-    priority: 0.7
-  }))
-
-  return [...staticPages, ...blogPages]
 }

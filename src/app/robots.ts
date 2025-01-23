@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/', '/_next/'],
     },
-    sitemap: 'https://www.kasiotisg.com/sitemap.xml',
+    sitemap: 'https://kasiotisg.com/sitemap.xml',
   }
 }
