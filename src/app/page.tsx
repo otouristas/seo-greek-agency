@@ -5,9 +5,9 @@ import TestimonialCarousel from '@/components/TestimonialCarousel'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'SEO Greek Agency | Expert SEO Services for Business Growth',
+  title: 'Another SEO Guru | Expert SEO Services for Business Growth',
   description: 'Transform your online presence with our expert SEO services. We deliver data-driven strategies, technical optimization, and measurable results for sustainable business growth.',
-  keywords: 'SEO services, search engine optimization, digital marketing, SEO agency, SEO expert, Greek SEO agency, technical SEO, content optimization, link building',
+  keywords: 'SEO services, search engine optimization, digital marketing, SEO agency, SEO expert, Another SEO Guru, technical SEO, content optimization, link building',
   alternates: {
     canonical: 'https://kasiotisg.com',
   }

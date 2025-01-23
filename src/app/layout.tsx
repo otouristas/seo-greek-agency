@@ -17,8 +17,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://kasiotisg.com'),
   title: {
-    template: '%s | SEO Greek Agency',
-    default: 'SEO Greek Agency | Expert SEO Services'
+    template: '%s | Another SEO Guru',
+    default: 'Another SEO Guru | Expert SEO Services'
   },
   description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
   icons: {
@@ -30,24 +30,24 @@ export const metadata: Metadata = {
     apple: '/logo.svg',
   },
   openGraph: {
-    title: 'SEO Greek Agency | Expert SEO Services',
+    title: 'Another SEO Guru | Expert SEO Services',
     description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
     type: 'website',
     locale: 'en_US',
     url: '/',
-    siteName: 'SEO Greek Agency',
+    siteName: 'Another SEO Guru',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'SEO Greek Agency'
+        alt: 'Another SEO Guru'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SEO Greek Agency | Expert SEO Services',
+    title: 'Another SEO Guru | Expert SEO Services',
     description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
     site: '@kasiotisg',
     creator: '@kasiotisg'
