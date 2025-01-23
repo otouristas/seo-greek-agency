@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Ensure your website is technically sound with our technical SEO audits and optimizations. Improve site speed, mobile-friendliness, and crawlability.',
   },
   alternates: {
-    canonical: '/services/technical-seo',
+    canonical: 'https://kasiotisg.com/services/technical-seo',
   }
 }
+

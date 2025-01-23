@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Stay updated with the latest SEO trends, strategies, and insights. Expert advice on technical SEO, content optimization, and search engine algorithms.',
   },
   alternates: {
-    canonical: '/blog',
+    canonical: 'https://kasiotisg.com/blog',
   }
 }
+

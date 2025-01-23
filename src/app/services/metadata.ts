@@ -12,6 +12,6 @@ export const metadata: Metadata = {
     description: 'Explore our comprehensive SEO services designed to improve your search rankings and drive organic traffic. From technical SEO to content optimization.',
   },
   alternates: {
-    canonical: '/services',
+    canonical: 'https://kasiotisg.com/services',
   }
 }

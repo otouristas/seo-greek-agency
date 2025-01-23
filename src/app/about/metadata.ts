@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Learn about SEO Greek Agency\'s mission, values, and team of experienced SEO experts dedicated to helping your business achieve online success.',
   },
   alternates: {
-    canonical: '/about',
+    canonical: 'https://kasiotisg.com/about',
   }
 }
+
