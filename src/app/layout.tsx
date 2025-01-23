@@ -17,9 +17,6 @@ export const metadata: Metadata = {
     default: 'SEO Greek Agency | Expert SEO Services'
   },
   description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
-  alternates: {
-    canonical: '/',
-  },
   icons: {
     icon: [
       { url: '/logo.svg', type: 'image/svg+xml' },
