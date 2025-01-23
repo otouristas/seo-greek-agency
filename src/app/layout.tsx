@@ -8,7 +8,11 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 import CookieConsent from '@/components/CookieConsent'
 import ChatAgent from '@/components/chat/ChatAgent'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://kasiotisg.com'),
