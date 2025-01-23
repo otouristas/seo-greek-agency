@@ -2,18 +2,18 @@ import Image from 'next/image'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Us | SEO Greek Agency',
-  description: 'Learn about SEO Greek Agency - your trusted partner for professional SEO services. Our team of experts is dedicated to helping your business grow online.',
+  title: 'About SEO Greek Agency | Your Partner in SEO Success',
+  description: 'Learn about SEO Greek Agency\'s mission, values, and team of experienced SEO experts dedicated to helping your business achieve online success.',
   alternates: {
-    canonical: '/about',
+    canonical: 'https://kasiotisg.com/about',
   },
   openGraph: {
-    title: 'About Another SEO Guru | Your Partner in SEO Success',
-    description: 'Learn about Another SEO Guru\'s mission, values, and team of experienced SEO experts dedicated to helping your business achieve online success.',
+    title: 'About SEO Greek Agency | Your Partner in SEO Success',
+    description: 'Learn about SEO Greek Agency\'s mission, values, and team of experienced SEO experts dedicated to helping your business achieve online success.',
   },
   twitter: {
-    title: 'About Another SEO Guru | Your Partner in SEO Success',
-    description: 'Learn about Another SEO Guru\'s mission, values, and team of experienced SEO experts dedicated to helping your business achieve online success.',
+    title: 'About SEO Greek Agency | Your Partner in SEO Success',
+    description: 'Learn about SEO Greek Agency\'s mission, values, and team of experienced SEO experts dedicated to helping your business achieve online success.',
   },
 }
 
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 Transforming SEO,<br />One Success at a Time
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto">
-                Meet the team behind Another SEO Guru and discover how we're 
+                Meet the team behind SEO Greek Agency and discover how we're 
                 revolutionizing digital success stories.
               </p>
             </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Our Story</h2>
             <p className="text-gray-600 mb-6">
-              Another SEO Guru emerged from a simple yet powerful idea: to make professional SEO services accessible, transparent, and effective for businesses of all sizes. We saw that many businesses were struggling with complex SEO practices and expensive consulting fees that didn't deliver results.
+              SEO Greek Agency emerged from a simple yet powerful idea: to make professional SEO services accessible, transparent, and effective for businesses of all sizes. We saw that many businesses were struggling with complex SEO practices and expensive consulting fees that didn't deliver results.
             </p>
             <p className="text-gray-600 mb-6">
               Our mission goes beyond just improving rankings - we're here to transform how businesses approach SEO. By combining technical expertise with clear communication and proven strategies, we help our clients achieve sustainable growth through organic search traffic.

@@ -6,11 +6,24 @@ import BlogLayout from '@/components/BlogLayout'
 export const metadata: Metadata = {
   title: 'The Future of SEO: How AI and Machine Learning are Reshaping the Landscape',
   description: 'Discover how AI and machine learning are transforming the SEO landscape. Learn about key AI applications, Google\'s algorithm updates, and how to adapt your SEO strategy for the future.',
+  alternates: {
+    canonical: 'https://kasiotisg.com/blog/future-of-seo-ai-machine-learning',
+  },
   openGraph: {
     title: 'The Future of SEO: How AI and Machine Learning are Reshaping the Landscape',
     description: 'Discover how AI and machine learning are transforming the SEO landscape. Learn about key AI applications, Google\'s algorithm updates, and how to adapt your SEO strategy for the future.',
+    type: 'article',
+    images: [
+      {
+        url: '/blog/ai-seo.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Future of SEO with AI and Machine Learning'
+      }
+    ]
   },
   twitter: {
+    card: 'summary_large_image',
     title: 'The Future of SEO: How AI and Machine Learning are Reshaping the Landscape',
     description: 'Discover how AI and machine learning are transforming the SEO landscape. Learn about key AI applications, Google\'s algorithm updates, and how to adapt your SEO strategy for the future.',
   },

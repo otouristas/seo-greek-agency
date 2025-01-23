@@ -6,20 +6,8 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'SEO Greek Agency | Expert SEO Services for Business Growth',
-  description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
-  keywords: 'SEO services, search engine optimization, digital marketing, SEO agency, SEO expert',
-  openGraph: {
-    title: 'SEO Greek Agency | Expert SEO Services for Business Growth',
-    description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'SEO Greek Agency',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'SEO Greek Agency | Expert SEO Services for Business Growth',
-    description: 'Expert SEO services to help your business grow online. We specialize in technical SEO, content optimization, and link building strategies.',
-  },
+  description: 'Transform your online presence with our expert SEO services. We deliver data-driven strategies, technical optimization, and measurable results for sustainable business growth.',
+  keywords: 'SEO services, search engine optimization, digital marketing, SEO agency, SEO expert, Greek SEO agency, technical SEO, content optimization, link building',
   alternates: {
     canonical: 'https://kasiotisg.com',
   }
