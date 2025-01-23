@@ -29,14 +29,19 @@ const tableOfContents = [
 
 const relatedPosts = [
   {
-    title: 'Content Marketing Strategies for 2025',
-    slug: 'content-marketing-strategies-2025',
-    image: '/blog/content-marketing.jpg'
+    title: 'Link Building Strategies That Actually Work',
+    slug: 'effective-link-building-strategies',
+    image: '/blog/link-building.jpg'
   },
   {
-    title: 'Technical SEO Best Practices',
-    slug: 'technical-seo-best-practices',
-    image: '/blog/technical-seo.jpg'
+    title: 'Core Web Vitals Guide',
+    slug: 'core-web-vitals-guide',
+    image: '/blog/core-web-vitals.jpg'
+  },
+  {
+    title: 'Content Optimization Tips for E-commerce',
+    slug: 'content-optimization-ecommerce',
+    image: '/blog/ecommerce-content.jpg'
   }
 ]
 

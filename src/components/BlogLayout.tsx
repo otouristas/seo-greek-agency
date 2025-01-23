@@ -11,6 +11,7 @@ interface BlogLayoutProps {
   }
   date: string
   readingTime?: string
+  featuredImage?: string
   tableOfContents?: {
     title: string
     id: string
@@ -27,6 +28,7 @@ export default function BlogLayout({
   author,
   date,
   readingTime = '10 min read',
+  featuredImage,
   tableOfContents = [],
   relatedPosts = []
 }: BlogLayoutProps) {

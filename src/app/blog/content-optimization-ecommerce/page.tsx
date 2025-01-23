@@ -7,15 +7,24 @@ export const metadata: Metadata = {
   title: 'Content Optimization Tips for E-commerce: Drive Rankings and Sales',
   description: 'Learn how to optimize your e-commerce content for better search rankings and increased sales. Discover tips for product pages, category pages, descriptions, schema markup, and more.',
   alternates: {
-    canonical: '/blog/content-optimization-ecommerce',
+    canonical: 'https://kasiotisg.com/blog/content-optimization-ecommerce',
   },
   openGraph: {
     title: 'Content Optimization Tips for E-commerce: Drive Rankings and Sales',
     description: 'Learn how to optimize your e-commerce content for better search rankings and increased sales. Discover tips for product pages, category pages, descriptions, schema markup, and more.',
+    images: [
+      {
+        url: 'https://kasiotisg.com/blog/ecommerce-content.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'E-commerce Content Optimization Guide'
+      }
+    ]
   },
   twitter: {
     title: 'Content Optimization Tips for E-commerce: Drive Rankings and Sales',
     description: 'Learn how to optimize your e-commerce content for better search rankings and increased sales. Discover tips for product pages, category pages, descriptions, schema markup, and more.',
+    images: ['https://kasiotisg.com/blog/ecommerce-content.jpg']
   },
   keywords: 'E-commerce, Content Optimization, SEO, Product Pages, Category Pages, Product Descriptions, Schema Markup, Rich Snippets, Buying Journey, Mobile Optimization, Conversion Rate Optimization, Online Sales'
 }
@@ -58,9 +67,10 @@ export default function BlogPost() {
         role: 'CEO',
         image: '/team/george-k.svg'
       }}
-      date={format(new Date('2024-12-28'), 'MMMM d, yyyy')}
+      date={format(new Date('2025-01-15'), 'MMMM d, yyyy')}
       tableOfContents={tableOfContents}
       relatedPosts={relatedPosts}
+      featuredImage="/blog/ecommerce-content.jpg"
     >
       <article>
         <header className="mb-12">
