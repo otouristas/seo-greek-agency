@@ -1,6 +1,26 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Off-Page SEO & Link Building | Build Authority & Rankings',
+  description: 'Enhance your website\'s authority and search engine rankings with our effective off-page SEO and high-quality link building strategies.',
+  alternates: {
+    canonical: 'https://kasiotisg.com/services/off-page-seo',
+  },
+  openGraph: {
+    title: 'Off-Page SEO & Link Building | Build Authority & Rankings',
+    description: 'Enhance your website\'s authority and search engine rankings with our effective off-page SEO and high-quality link building strategies.',
+    type: 'website',
+    url: 'https://kasiotisg.com/services/off-page-seo',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Off-Page SEO & Link Building | Build Authority & Rankings',
+    description: 'Enhance your website\'s authority and search engine rankings with our effective off-page SEO and high-quality link building strategies.',
+  }
+}
 
 export default function OffPageSEOPage() {
   const strategies = [

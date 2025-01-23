@@ -4,18 +4,18 @@ import PricingCard from '@/components/PricingCard'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'SEO Pricing Plans | Transparent & Flexible Packages',
-  description: 'Choose from our flexible SEO pricing plans designed to fit your business needs and budget. Get started with a free SEO audit today.',
+  title: 'SEO Pricing | Transparent & Flexible Plans',
+  description: 'View our transparent SEO pricing plans designed to fit businesses of all sizes. Choose the perfect package for your needs and budget.',
   openGraph: {
-    title: 'SEO Pricing Plans | Transparent & Flexible Packages',
-    description: 'Choose from our flexible SEO pricing plans designed to fit your business needs and budget. Get started with a free SEO audit today.',
+    title: 'SEO Pricing | Transparent & Flexible Plans',
+    description: 'View our transparent SEO pricing plans designed to fit businesses of all sizes. Choose the perfect package for your needs and budget.',
   },
   twitter: {
-    title: 'SEO Pricing Plans | Transparent & Flexible Packages',
-    description: 'Choose from our flexible SEO pricing plans designed to fit your business needs and budget. Get started with a free SEO audit today.',
+    title: 'SEO Pricing | Transparent & Flexible Plans',
+    description: 'View our transparent SEO pricing plans designed to fit businesses of all sizes. Choose the perfect package for your needs and budget.',
   },
   alternates: {
-    canonical: 'https://www.kasiotisg.com/pricing',
+    canonical: 'https://kasiotisg.com/pricing',
   }
 }
 

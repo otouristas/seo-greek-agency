@@ -1,6 +1,15 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'SEO Audits | Uncover Opportunities for Growth',
+  description: 'Get a comprehensive SEO audit to identify areas for improvement and unlock your website\'s full potential. We analyze your website and provide actionable insights.',
+  alternates: {
+    canonical: 'https://kasiotisg.com/services/seo-audits',
+  }
+}
 
 export default function SEOAuditsPage() {
   const auditAreas = [

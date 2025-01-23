@@ -1,22 +1,15 @@
 import Image from 'next/image'
 import { Metadata } from 'next'
-import TestimonialCarousel from '@/components/TestimonialCarousel'
 
 export const metadata: Metadata = {
-  title: 'Our Clients | SEO Greek Agency Success Stories',
-  description: 'Discover how we\'ve helped businesses across hospitality, sports retail, health, and automotive industries achieve remarkable growth through SEO.',
-  openGraph: {
-    title: 'Our Clients | SEO Greek Agency Success Stories',
-    description: 'Discover how we\'ve helped businesses across hospitality, sports retail, health, and automotive industries achieve remarkable growth through SEO.',
-  },
-  twitter: {
-    title: 'Our Clients | SEO Greek Agency Success Stories',
-    description: 'Discover how we\'ve helped businesses across hospitality, sports retail, health, and automotive industries achieve remarkable growth through SEO.',
-  },
+  title: 'Our Clients | Businesses We\'ve Helped Succeed',
+  description: 'See the diverse range of businesses we\'ve helped achieve their online goals with our expert SEO services.',
   alternates: {
-    canonical: 'https://www.kasiotisg.com/clients',
+    canonical: 'https://kasiotisg.com/clients',
   }
 }
+
+import TestimonialCarousel from '@/components/TestimonialCarousel'
 
 const testimonials = [
   {

@@ -1,6 +1,26 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'On-Page SEO Services | Optimize Your Website for Success',
+  description: 'Improve your website\'s on-page elements, including content, meta tags, and internal linking, to boost search engine visibility and user experience.',
+  alternates: {
+    canonical: 'https://kasiotisg.com/services/on-page-seo',
+  },
+  openGraph: {
+    title: 'On-Page SEO Services | Optimize Your Website for Success',
+    description: 'Improve your website\'s on-page elements, including content, meta tags, and internal linking, to boost search engine visibility and user experience.',
+    type: 'website',
+    url: 'https://kasiotisg.com/services/on-page-seo',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'On-Page SEO Services | Optimize Your Website for Success',
+    description: 'Improve your website\'s on-page elements, including content, meta tags, and internal linking, to boost search engine visibility and user experience.',
+  }
+}
 
 export default function OnPageSEOPage() {
   const optimizationAreas = [

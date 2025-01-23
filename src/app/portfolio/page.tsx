@@ -3,18 +3,21 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'SEO Portfolio | See Our Proven Results',
-  description: 'Explore our SEO portfolio and see the results we\'ve achieved for our clients across hospitality, sports retail, health, and automotive industries.',
+  description: 'Explore our SEO portfolio and see the results we\'ve achieved for our clients. View case studies and examples of our successful SEO campaigns.',
+  alternates: {
+    canonical: 'https://kasiotisg.com/portfolio',
+  },
   robots: {
     index: false,
     follow: false
   },
   openGraph: {
     title: 'SEO Portfolio | See Our Proven Results',
-    description: 'Explore our SEO portfolio and see the results we\'ve achieved for our clients across hospitality, sports retail, health, and automotive industries.',
+    description: 'Explore our SEO portfolio and see the results we\'ve achieved for our clients. View case studies and examples of our successful SEO campaigns.',
   },
   twitter: {
     title: 'SEO Portfolio | See Our Proven Results',
-    description: 'Explore our SEO portfolio and see the results we\'ve achieved for our clients across hospitality, sports retail, health, and automotive industries.',
+    description: 'Explore our SEO portfolio and see the results we\'ve achieved for our clients. View case studies and examples of our successful SEO campaigns.',
   }
 }
 
